@@ -3,7 +3,7 @@
   "swagger": "2.0",
   "info": {
     "title": "Eraware My Module",
-    "version": "0.1.0.0"
+    "version": "0.2.0.0"
   },
   "consumes": [
     "application/json"
