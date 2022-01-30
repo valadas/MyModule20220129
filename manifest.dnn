@@ -1,6 +1,6 @@
 <dotnetnuke version="5.0" type="Package">
   <packages>
-    <package name="Eraware_MyModule" type="Module" version="00.01.00">
+    <package name="Eraware_MyModule" type="Module" version="00.02.00">
       <friendlyName>My Module</friendlyName>
       <description>My Module</description>
       <iconFile>~/DesktopModules/MyModule20220129/resources/images/module-icon.png</iconFile>
@@ -65,7 +65,7 @@
             </moduleDefinitions>
           </desktopModule>
         </component>
-        <component type="Cleanup" version="00.01.00" glob="DesktopModules/MyModule20220129/resources/**/*" />
+        <component type="Cleanup" version="00.02.00" glob="DesktopModules/MyModule20220129/resources/**/*" />
         <component type="ResourceFile">
           <resourceFiles>
             <basePath>DesktopModules/MyModule20220129/resources</basePath>
