@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="Common\Globals.cs" />
     <Compile Include="Controllers\LocalizationController.cs" />
+    <Compile Include="Data\Repositories\PagedList.cs" />
     <Compile Include="DTO\GetItemsPageDTO.cs" />
     <Compile Include="Controllers\ValidateModelAttribute.cs" />
     <Compile Include="Data\Entities\BaseEntity.cs" />
@@ -165,6 +166,7 @@
     <EmbeddedResource Include="resources\App_LocalResources\ModelValidation.resx" />
     <EmbeddedResource Include="resources\App_LocalResources\UI.resx" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

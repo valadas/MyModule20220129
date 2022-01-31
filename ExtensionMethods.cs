@@ -2,8 +2,11 @@
 // Copyright Eraware
 
 using System;
+using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Threading.Tasks;
 
 namespace Eraware.Modules.MyModule
 {
@@ -12,45 +15,6 @@ namespace Eraware.Modules.MyModule
     /// </summary>
     internal static class ExtensionMethods
     {
-        /// <summary>
-        /// Gets a page of results from an IQueryable collection.
-        /// </summary>
-        /// <typeparam name="T">The type of the entities in the IQueryable.</typeparam>
-        /// <param name="items">The original items to get a page from.</param>
-        /// <param name="page">The page number to get.</param>
-        /// <param name="pageSize">How many items are on each page.</param>
-        /// <param name="resultCount">Returns the total amount of items available.</param>
-        /// <param name="pageCount">Returns the total amount of available pages.</param>
-        /// <returns>The items that belong on the give page.</returns>
-        internal static IQueryable<T> GetPage<T>(
-            this IQueryable<T> items,
-            int page,
-            int pageSize,
-            out int resultCount,
-            out int pageCount)
-        {
-            if (page < 1)
-            {
-                page = 1;
-            }
-
-            if (pageSize < 1)
-            {
-                pageSize = 1;
-            }
-
-            resultCount = items.Count();
-            pageCount = (resultCount + pageSize - 1) / pageSize;
-            int skip = pageSize * (page - 1);
-
-            if (!items.IsOrdered())
-            {
-                items = items.OrderBy(i => true);
-            }
-
-            return items.Skip(skip).Take(pageSize);
-        }
-
         /// <summary>
         /// Checks if the query contains any sorting expressions
         /// such as OrderBy, OrderByDescending, ThenBy or ThenByDescending.

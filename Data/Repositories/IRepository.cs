@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Threading.Tasks;
 
 namespace Eraware.Modules.MyModule.Data.Repositories
 {
@@ -20,7 +21,7 @@ namespace Eraware.Modules.MyModule.Data.Repositories
         /// Gets all entities.
         /// </summary>
         /// <returns>All the entities.</returns>
-        IEnumerable<T> GetAll();
+        Task<IEnumerable<T>> GetAllAsync();
 
         /// <summary>
         /// Gets entitties as an IQueryable to allow furter filtering/sorting, etc.
@@ -33,26 +34,45 @@ namespace Eraware.Modules.MyModule.Data.Repositories
         /// </summary>
         /// <param name="id">The id of the entity.</param>
         /// <returns>A single entity.</returns>
-        T GetById(int id);
+        Task<T> GetByIdAsync(int id);
+
+        /// <summary>
+        /// Gets a page of entities.
+        /// </summary>
+        /// <param name="page">The page number to get.</param>
+        /// <param name="pageSize">The size of each page.</param>
+        /// <param name="sortPredicate">An optional predicate to sort the superset.</param>
+        /// <param name="filterPredicate">An optional predicate to filter the superset.</param>
+        /// <param name="include">If specified, will include the defined related entities.</param>
+        /// <returns><see cref="PagedList{T}"/>.</returns>
+        Task<PagedList<T>> GetPageAsync(
+            int page,
+            int pageSize,
+            Func<IQueryable<T>, IOrderedQueryable<T>> sortPredicate,
+            Expression<Func<T, bool>> filterPredicate = null,
+            params Expression<Func<T, object>>[] include);
 
         /// <summary>
         /// Creates an entity and saves it to the database.
         /// </summary>
         /// <param name="entity">The entity to save.</param>
         /// <param name="userId">The creating Dnn user ID. If not provided, will default to -1.</param>
-        void Create(T entity, int userId = -1);
+        /// <returns>The id of the recently created item.</returns>
+        Task<int> CreateAsync(T entity, int userId = -1);
 
         /// <summary>
         /// Updates an entity and saves the changes to the database.
         /// </summary>
         /// <param name="entity">The entity to update.</param>
         /// <param name="userId">The updating Dnn user ID. If not provided, will default to -1.</param>
-        void Update(T entity, int userId = -1);
+        /// <returns>An awaitable Task.</returns>
+        Task UpdateAsync(T entity, int userId = -1);
 
         /// <summary>
         /// Deletes an entity in the database.
         /// </summary>
         /// <param name="id">The id of the entity.</param>
-        void Delete(int id);
+        /// <returns>An awaitable Task.</returns>
+        Task DeleteAsync(int id);
     }
 }
