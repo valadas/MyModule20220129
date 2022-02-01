@@ -1,6 +1,7 @@
 ﻿// MIT License
 // Copyright Eraware
 
+using Eraware.Modules.MyModule.Common.Extensions;
 using Eraware.Modules.MyModule.Data.Entities;
 using Eraware.Modules.MyModule.Data.Repositories;
 using Eraware.Modules.MyModule.DTO;
@@ -9,6 +10,7 @@ using Eraware.Modules.MyModule.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace Eraware.Modules.MyModule.Services
 {
@@ -30,7 +32,7 @@ namespace Eraware.Modules.MyModule.Services
 
         /// <inheritdoc/>
         /// <exception cref="ArgumentNullException"> is thrown if the item or one of its required properties are missing.</exception>
-        public ItemViewModel CreateItem(CreateItemDTO item, int userId)
+        public async Task<ItemViewModel> CreateItemAsync(CreateItemDTO item, int userId)
         {
             if (item == null)
             {
@@ -43,56 +45,45 @@ namespace Eraware.Modules.MyModule.Services
             }
 
             var newItem = new Item() { Name = item.Name, Description = item.Description };
-            this.itemRepository.Create(newItem, userId);
+            await this.itemRepository.CreateAsync(newItem, userId);
 
             return new ItemViewModel(newItem);
         }
 
         /// <inheritdoc/>
-        public ItemsPageViewModel GetItemsPage(string query, int page = 1, int pageSize = 10, bool descending = false)
+        public async Task<ItemsPageViewModel> GetItemsPageAsync(string query, int page = 1, int pageSize = 10, bool descending = false)
         {
-            var items = this.itemRepository.Get();
-            if (!string.IsNullOrWhiteSpace(query))
-            {
-                items = items.Where(i => i.Name.Contains(query) || i.Description.Contains(query));
-            }
-
-            if (descending)
-            {
-                items = items.OrderByDescending(i => i.Name);
-            }
-            else
-            {
-                items = items.OrderBy(i => i.Name);
-            }
-
-            items = items.GetPage(page, pageSize, out int resultCount, out int pageCount);
-
-            if (pageCount < page)
-            {
-                page = pageCount;
-            }
+            var items = await this.itemRepository.GetPageAsync(
+                page,
+                pageSize,
+                entities => entities
+                    .Where(item => string.IsNullOrEmpty(query) || item.Name.ToUpper().Contains(query.ToUpper()))
+                    .Order(item => item.Name, descending));
 
             var itemsPageViewModel = new ItemsPageViewModel()
             {
-                Items = new List<ItemViewModel>(),
-                Page = page < 1 ? 1 : page,
-                ResultCount = resultCount,
-                PageCount = pageCount,
+                Items = items.Items.Select(item => new ItemViewModel
+                {
+                    Description = item.Description,
+                    Id = item.Id,
+                    Name = item.Name,
+                }).ToList(),
+                Page = items.Page,
+                ResultCount = items.ResultCount,
+                PageCount = items.PageCount,
             };
-            items.ToList().ForEach(i => itemsPageViewModel.Items.Add(new ItemViewModel(i)));
 
             return itemsPageViewModel;
         }
 
         /// <inheritdoc/>
-        public void DeleteItem(int itemId)
+        public async Task DeleteItemAsync(int itemId)
         {
-            this.itemRepository.Delete(itemId);
+            await this.itemRepository.DeleteAsync(itemId);
         }
 
         /// <inheritdoc/>
-        public void UpdateItem(UpdateItemDTO dto, int userId)
+        public async Task UpdateItemAsync(UpdateItemDTO dto, int userId)
         {
             if (dto is null)
             {
@@ -104,11 +95,11 @@ namespace Eraware.Modules.MyModule.Services
                 throw new ArgumentNullException(nameof(dto.Name));
             }
 
-            var item = this.itemRepository.GetById(dto.Id);
+            var item = await this.itemRepository.GetByIdAsync(dto.Id);
             item.Name = dto.Name;
             item.Description = dto.Description;
 
-            this.itemRepository.Update(item, userId);
+            await this.itemRepository.UpdateAsync(item, userId);
         }
     }
 }
