@@ -437,40 +437,40 @@ references:
   fullName.vb: Eraware.Modules.MyModule.Data.Repositories.IRepository(Of T)
   nameWithType: IRepository<T>
   nameWithType.vb: IRepository(Of T)
-- uid: Eraware.Modules.MyModule.Data.Repositories.IRepository`1.Create(`0,System.Int32)
-  name: Create(T, Int32)
-  href: api/Eraware.Modules.MyModule.Data.Repositories.IRepository-1.html#Eraware_Modules_MyModule_Data_Repositories_IRepository_1_Create__0_System_Int32_
-  commentId: M:Eraware.Modules.MyModule.Data.Repositories.IRepository`1.Create(`0,System.Int32)
-  fullName: Eraware.Modules.MyModule.Data.Repositories.IRepository<T>.Create(T, System.Int32)
-  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.IRepository(Of T).Create(T, System.Int32)
-  nameWithType: IRepository<T>.Create(T, Int32)
-  nameWithType.vb: IRepository(Of T).Create(T, Int32)
-- uid: Eraware.Modules.MyModule.Data.Repositories.IRepository`1.Create*
-  name: Create
-  href: api/Eraware.Modules.MyModule.Data.Repositories.IRepository-1.html#Eraware_Modules_MyModule_Data_Repositories_IRepository_1_Create_
-  commentId: Overload:Eraware.Modules.MyModule.Data.Repositories.IRepository`1.Create
+- uid: Eraware.Modules.MyModule.Data.Repositories.IRepository`1.CreateAsync(`0,System.Int32)
+  name: CreateAsync(T, Int32)
+  href: api/Eraware.Modules.MyModule.Data.Repositories.IRepository-1.html#Eraware_Modules_MyModule_Data_Repositories_IRepository_1_CreateAsync__0_System_Int32_
+  commentId: M:Eraware.Modules.MyModule.Data.Repositories.IRepository`1.CreateAsync(`0,System.Int32)
+  fullName: Eraware.Modules.MyModule.Data.Repositories.IRepository<T>.CreateAsync(T, System.Int32)
+  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.IRepository(Of T).CreateAsync(T, System.Int32)
+  nameWithType: IRepository<T>.CreateAsync(T, Int32)
+  nameWithType.vb: IRepository(Of T).CreateAsync(T, Int32)
+- uid: Eraware.Modules.MyModule.Data.Repositories.IRepository`1.CreateAsync*
+  name: CreateAsync
+  href: api/Eraware.Modules.MyModule.Data.Repositories.IRepository-1.html#Eraware_Modules_MyModule_Data_Repositories_IRepository_1_CreateAsync_
+  commentId: Overload:Eraware.Modules.MyModule.Data.Repositories.IRepository`1.CreateAsync
   isSpec: "True"
-  fullName: Eraware.Modules.MyModule.Data.Repositories.IRepository<T>.Create
-  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.IRepository(Of T).Create
-  nameWithType: IRepository<T>.Create
-  nameWithType.vb: IRepository(Of T).Create
-- uid: Eraware.Modules.MyModule.Data.Repositories.IRepository`1.Delete(System.Int32)
-  name: Delete(Int32)
-  href: api/Eraware.Modules.MyModule.Data.Repositories.IRepository-1.html#Eraware_Modules_MyModule_Data_Repositories_IRepository_1_Delete_System_Int32_
-  commentId: M:Eraware.Modules.MyModule.Data.Repositories.IRepository`1.Delete(System.Int32)
-  fullName: Eraware.Modules.MyModule.Data.Repositories.IRepository<T>.Delete(System.Int32)
-  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.IRepository(Of T).Delete(System.Int32)
-  nameWithType: IRepository<T>.Delete(Int32)
-  nameWithType.vb: IRepository(Of T).Delete(Int32)
-- uid: Eraware.Modules.MyModule.Data.Repositories.IRepository`1.Delete*
-  name: Delete
-  href: api/Eraware.Modules.MyModule.Data.Repositories.IRepository-1.html#Eraware_Modules_MyModule_Data_Repositories_IRepository_1_Delete_
-  commentId: Overload:Eraware.Modules.MyModule.Data.Repositories.IRepository`1.Delete
+  fullName: Eraware.Modules.MyModule.Data.Repositories.IRepository<T>.CreateAsync
+  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.IRepository(Of T).CreateAsync
+  nameWithType: IRepository<T>.CreateAsync
+  nameWithType.vb: IRepository(Of T).CreateAsync
+- uid: Eraware.Modules.MyModule.Data.Repositories.IRepository`1.DeleteAsync(System.Int32)
+  name: DeleteAsync(Int32)
+  href: api/Eraware.Modules.MyModule.Data.Repositories.IRepository-1.html#Eraware_Modules_MyModule_Data_Repositories_IRepository_1_DeleteAsync_System_Int32_
+  commentId: M:Eraware.Modules.MyModule.Data.Repositories.IRepository`1.DeleteAsync(System.Int32)
+  fullName: Eraware.Modules.MyModule.Data.Repositories.IRepository<T>.DeleteAsync(System.Int32)
+  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.IRepository(Of T).DeleteAsync(System.Int32)
+  nameWithType: IRepository<T>.DeleteAsync(Int32)
+  nameWithType.vb: IRepository(Of T).DeleteAsync(Int32)
+- uid: Eraware.Modules.MyModule.Data.Repositories.IRepository`1.DeleteAsync*
+  name: DeleteAsync
+  href: api/Eraware.Modules.MyModule.Data.Repositories.IRepository-1.html#Eraware_Modules_MyModule_Data_Repositories_IRepository_1_DeleteAsync_
+  commentId: Overload:Eraware.Modules.MyModule.Data.Repositories.IRepository`1.DeleteAsync
   isSpec: "True"
-  fullName: Eraware.Modules.MyModule.Data.Repositories.IRepository<T>.Delete
-  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.IRepository(Of T).Delete
-  nameWithType: IRepository<T>.Delete
-  nameWithType.vb: IRepository(Of T).Delete
+  fullName: Eraware.Modules.MyModule.Data.Repositories.IRepository<T>.DeleteAsync
+  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.IRepository(Of T).DeleteAsync
+  nameWithType: IRepository<T>.DeleteAsync
+  nameWithType.vb: IRepository(Of T).DeleteAsync
 - uid: Eraware.Modules.MyModule.Data.Repositories.IRepository`1.Get
   name: Get()
   href: api/Eraware.Modules.MyModule.Data.Repositories.IRepository-1.html#Eraware_Modules_MyModule_Data_Repositories_IRepository_1_Get
@@ -488,57 +488,187 @@ references:
   fullName.vb: Eraware.Modules.MyModule.Data.Repositories.IRepository(Of T).Get
   nameWithType: IRepository<T>.Get
   nameWithType.vb: IRepository(Of T).Get
-- uid: Eraware.Modules.MyModule.Data.Repositories.IRepository`1.GetAll
-  name: GetAll()
-  href: api/Eraware.Modules.MyModule.Data.Repositories.IRepository-1.html#Eraware_Modules_MyModule_Data_Repositories_IRepository_1_GetAll
-  commentId: M:Eraware.Modules.MyModule.Data.Repositories.IRepository`1.GetAll
-  fullName: Eraware.Modules.MyModule.Data.Repositories.IRepository<T>.GetAll()
-  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.IRepository(Of T).GetAll()
-  nameWithType: IRepository<T>.GetAll()
-  nameWithType.vb: IRepository(Of T).GetAll()
-- uid: Eraware.Modules.MyModule.Data.Repositories.IRepository`1.GetAll*
-  name: GetAll
-  href: api/Eraware.Modules.MyModule.Data.Repositories.IRepository-1.html#Eraware_Modules_MyModule_Data_Repositories_IRepository_1_GetAll_
-  commentId: Overload:Eraware.Modules.MyModule.Data.Repositories.IRepository`1.GetAll
+- uid: Eraware.Modules.MyModule.Data.Repositories.IRepository`1.GetAllAsync
+  name: GetAllAsync()
+  href: api/Eraware.Modules.MyModule.Data.Repositories.IRepository-1.html#Eraware_Modules_MyModule_Data_Repositories_IRepository_1_GetAllAsync
+  commentId: M:Eraware.Modules.MyModule.Data.Repositories.IRepository`1.GetAllAsync
+  fullName: Eraware.Modules.MyModule.Data.Repositories.IRepository<T>.GetAllAsync()
+  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.IRepository(Of T).GetAllAsync()
+  nameWithType: IRepository<T>.GetAllAsync()
+  nameWithType.vb: IRepository(Of T).GetAllAsync()
+- uid: Eraware.Modules.MyModule.Data.Repositories.IRepository`1.GetAllAsync*
+  name: GetAllAsync
+  href: api/Eraware.Modules.MyModule.Data.Repositories.IRepository-1.html#Eraware_Modules_MyModule_Data_Repositories_IRepository_1_GetAllAsync_
+  commentId: Overload:Eraware.Modules.MyModule.Data.Repositories.IRepository`1.GetAllAsync
   isSpec: "True"
-  fullName: Eraware.Modules.MyModule.Data.Repositories.IRepository<T>.GetAll
-  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.IRepository(Of T).GetAll
-  nameWithType: IRepository<T>.GetAll
-  nameWithType.vb: IRepository(Of T).GetAll
-- uid: Eraware.Modules.MyModule.Data.Repositories.IRepository`1.GetById(System.Int32)
-  name: GetById(Int32)
-  href: api/Eraware.Modules.MyModule.Data.Repositories.IRepository-1.html#Eraware_Modules_MyModule_Data_Repositories_IRepository_1_GetById_System_Int32_
-  commentId: M:Eraware.Modules.MyModule.Data.Repositories.IRepository`1.GetById(System.Int32)
-  fullName: Eraware.Modules.MyModule.Data.Repositories.IRepository<T>.GetById(System.Int32)
-  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.IRepository(Of T).GetById(System.Int32)
-  nameWithType: IRepository<T>.GetById(Int32)
-  nameWithType.vb: IRepository(Of T).GetById(Int32)
-- uid: Eraware.Modules.MyModule.Data.Repositories.IRepository`1.GetById*
-  name: GetById
-  href: api/Eraware.Modules.MyModule.Data.Repositories.IRepository-1.html#Eraware_Modules_MyModule_Data_Repositories_IRepository_1_GetById_
-  commentId: Overload:Eraware.Modules.MyModule.Data.Repositories.IRepository`1.GetById
+  fullName: Eraware.Modules.MyModule.Data.Repositories.IRepository<T>.GetAllAsync
+  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.IRepository(Of T).GetAllAsync
+  nameWithType: IRepository<T>.GetAllAsync
+  nameWithType.vb: IRepository(Of T).GetAllAsync
+- uid: Eraware.Modules.MyModule.Data.Repositories.IRepository`1.GetByIdAsync(System.Int32)
+  name: GetByIdAsync(Int32)
+  href: api/Eraware.Modules.MyModule.Data.Repositories.IRepository-1.html#Eraware_Modules_MyModule_Data_Repositories_IRepository_1_GetByIdAsync_System_Int32_
+  commentId: M:Eraware.Modules.MyModule.Data.Repositories.IRepository`1.GetByIdAsync(System.Int32)
+  fullName: Eraware.Modules.MyModule.Data.Repositories.IRepository<T>.GetByIdAsync(System.Int32)
+  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.IRepository(Of T).GetByIdAsync(System.Int32)
+  nameWithType: IRepository<T>.GetByIdAsync(Int32)
+  nameWithType.vb: IRepository(Of T).GetByIdAsync(Int32)
+- uid: Eraware.Modules.MyModule.Data.Repositories.IRepository`1.GetByIdAsync*
+  name: GetByIdAsync
+  href: api/Eraware.Modules.MyModule.Data.Repositories.IRepository-1.html#Eraware_Modules_MyModule_Data_Repositories_IRepository_1_GetByIdAsync_
+  commentId: Overload:Eraware.Modules.MyModule.Data.Repositories.IRepository`1.GetByIdAsync
   isSpec: "True"
-  fullName: Eraware.Modules.MyModule.Data.Repositories.IRepository<T>.GetById
-  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.IRepository(Of T).GetById
-  nameWithType: IRepository<T>.GetById
-  nameWithType.vb: IRepository(Of T).GetById
-- uid: Eraware.Modules.MyModule.Data.Repositories.IRepository`1.Update(`0,System.Int32)
-  name: Update(T, Int32)
-  href: api/Eraware.Modules.MyModule.Data.Repositories.IRepository-1.html#Eraware_Modules_MyModule_Data_Repositories_IRepository_1_Update__0_System_Int32_
-  commentId: M:Eraware.Modules.MyModule.Data.Repositories.IRepository`1.Update(`0,System.Int32)
-  fullName: Eraware.Modules.MyModule.Data.Repositories.IRepository<T>.Update(T, System.Int32)
-  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.IRepository(Of T).Update(T, System.Int32)
-  nameWithType: IRepository<T>.Update(T, Int32)
-  nameWithType.vb: IRepository(Of T).Update(T, Int32)
-- uid: Eraware.Modules.MyModule.Data.Repositories.IRepository`1.Update*
-  name: Update
-  href: api/Eraware.Modules.MyModule.Data.Repositories.IRepository-1.html#Eraware_Modules_MyModule_Data_Repositories_IRepository_1_Update_
-  commentId: Overload:Eraware.Modules.MyModule.Data.Repositories.IRepository`1.Update
+  fullName: Eraware.Modules.MyModule.Data.Repositories.IRepository<T>.GetByIdAsync
+  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.IRepository(Of T).GetByIdAsync
+  nameWithType: IRepository<T>.GetByIdAsync
+  nameWithType.vb: IRepository(Of T).GetByIdAsync
+- uid: Eraware.Modules.MyModule.Data.Repositories.IRepository`1.GetPageAsync(System.Int32,System.Int32,System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}},System.Linq.Expressions.Expression{System.Func{`0,System.Object}}[])
+  name: GetPageAsync(Int32, Int32, Func<IQueryable<T>, IOrderedQueryable<T>>, Expression<Func<T, Object>>[])
+  href: api/Eraware.Modules.MyModule.Data.Repositories.IRepository-1.html#Eraware_Modules_MyModule_Data_Repositories_IRepository_1_GetPageAsync_System_Int32_System_Int32_System_Func_System_Linq_IQueryable__0__System_Linq_IOrderedQueryable__0___System_Linq_Expressions_Expression_System_Func__0_System_Object_____
+  commentId: M:Eraware.Modules.MyModule.Data.Repositories.IRepository`1.GetPageAsync(System.Int32,System.Int32,System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}},System.Linq.Expressions.Expression{System.Func{`0,System.Object}}[])
+  name.vb: GetPageAsync(Int32, Int32, Func(Of IQueryable(Of T), IOrderedQueryable(Of T)), Expression(Of Func(Of T, Object))())
+  fullName: Eraware.Modules.MyModule.Data.Repositories.IRepository<T>.GetPageAsync(System.Int32, System.Int32, System.Func<System.Linq.IQueryable<T>, System.Linq.IOrderedQueryable<T>>, System.Linq.Expressions.Expression<System.Func<T, System.Object>>[])
+  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.IRepository(Of T).GetPageAsync(System.Int32, System.Int32, System.Func(Of System.Linq.IQueryable(Of T), System.Linq.IOrderedQueryable(Of T)), System.Linq.Expressions.Expression(Of System.Func(Of T, System.Object))())
+  nameWithType: IRepository<T>.GetPageAsync(Int32, Int32, Func<IQueryable<T>, IOrderedQueryable<T>>, Expression<Func<T, Object>>[])
+  nameWithType.vb: IRepository(Of T).GetPageAsync(Int32, Int32, Func(Of IQueryable(Of T), IOrderedQueryable(Of T)), Expression(Of Func(Of T, Object))())
+- uid: Eraware.Modules.MyModule.Data.Repositories.IRepository`1.GetPageAsync*
+  name: GetPageAsync
+  href: api/Eraware.Modules.MyModule.Data.Repositories.IRepository-1.html#Eraware_Modules_MyModule_Data_Repositories_IRepository_1_GetPageAsync_
+  commentId: Overload:Eraware.Modules.MyModule.Data.Repositories.IRepository`1.GetPageAsync
   isSpec: "True"
-  fullName: Eraware.Modules.MyModule.Data.Repositories.IRepository<T>.Update
-  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.IRepository(Of T).Update
-  nameWithType: IRepository<T>.Update
-  nameWithType.vb: IRepository(Of T).Update
+  fullName: Eraware.Modules.MyModule.Data.Repositories.IRepository<T>.GetPageAsync
+  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.IRepository(Of T).GetPageAsync
+  nameWithType: IRepository<T>.GetPageAsync
+  nameWithType.vb: IRepository(Of T).GetPageAsync
+- uid: Eraware.Modules.MyModule.Data.Repositories.IRepository`1.UpdateAsync(`0,System.Int32)
+  name: UpdateAsync(T, Int32)
+  href: api/Eraware.Modules.MyModule.Data.Repositories.IRepository-1.html#Eraware_Modules_MyModule_Data_Repositories_IRepository_1_UpdateAsync__0_System_Int32_
+  commentId: M:Eraware.Modules.MyModule.Data.Repositories.IRepository`1.UpdateAsync(`0,System.Int32)
+  fullName: Eraware.Modules.MyModule.Data.Repositories.IRepository<T>.UpdateAsync(T, System.Int32)
+  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.IRepository(Of T).UpdateAsync(T, System.Int32)
+  nameWithType: IRepository<T>.UpdateAsync(T, Int32)
+  nameWithType.vb: IRepository(Of T).UpdateAsync(T, Int32)
+- uid: Eraware.Modules.MyModule.Data.Repositories.IRepository`1.UpdateAsync*
+  name: UpdateAsync
+  href: api/Eraware.Modules.MyModule.Data.Repositories.IRepository-1.html#Eraware_Modules_MyModule_Data_Repositories_IRepository_1_UpdateAsync_
+  commentId: Overload:Eraware.Modules.MyModule.Data.Repositories.IRepository`1.UpdateAsync
+  isSpec: "True"
+  fullName: Eraware.Modules.MyModule.Data.Repositories.IRepository<T>.UpdateAsync
+  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.IRepository(Of T).UpdateAsync
+  nameWithType: IRepository<T>.UpdateAsync
+  nameWithType.vb: IRepository(Of T).UpdateAsync
+- uid: Eraware.Modules.MyModule.Data.Repositories.PagedList`1
+  name: PagedList<T>
+  href: api/Eraware.Modules.MyModule.Data.Repositories.PagedList-1.html
+  commentId: T:Eraware.Modules.MyModule.Data.Repositories.PagedList`1
+  name.vb: PagedList(Of T)
+  fullName: Eraware.Modules.MyModule.Data.Repositories.PagedList<T>
+  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.PagedList(Of T)
+  nameWithType: PagedList<T>
+  nameWithType.vb: PagedList(Of T)
+- uid: Eraware.Modules.MyModule.Data.Repositories.PagedList`1.#ctor(System.Collections.Generic.IEnumerable{`0},System.Int32,System.Int32,System.Int32,System.Int32)
+  name: PagedList(IEnumerable<T>, Int32, Int32, Int32, Int32)
+  href: api/Eraware.Modules.MyModule.Data.Repositories.PagedList-1.html#Eraware_Modules_MyModule_Data_Repositories_PagedList_1__ctor_System_Collections_Generic_IEnumerable__0__System_Int32_System_Int32_System_Int32_System_Int32_
+  commentId: M:Eraware.Modules.MyModule.Data.Repositories.PagedList`1.#ctor(System.Collections.Generic.IEnumerable{`0},System.Int32,System.Int32,System.Int32,System.Int32)
+  name.vb: PagedList(IEnumerable(Of T), Int32, Int32, Int32, Int32)
+  fullName: Eraware.Modules.MyModule.Data.Repositories.PagedList<T>.PagedList(System.Collections.Generic.IEnumerable<T>, System.Int32, System.Int32, System.Int32, System.Int32)
+  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.PagedList(Of T).PagedList(System.Collections.Generic.IEnumerable(Of T), System.Int32, System.Int32, System.Int32, System.Int32)
+  nameWithType: PagedList<T>.PagedList(IEnumerable<T>, Int32, Int32, Int32, Int32)
+  nameWithType.vb: PagedList(Of T).PagedList(IEnumerable(Of T), Int32, Int32, Int32, Int32)
+- uid: Eraware.Modules.MyModule.Data.Repositories.PagedList`1.#ctor*
+  name: PagedList
+  href: api/Eraware.Modules.MyModule.Data.Repositories.PagedList-1.html#Eraware_Modules_MyModule_Data_Repositories_PagedList_1__ctor_
+  commentId: Overload:Eraware.Modules.MyModule.Data.Repositories.PagedList`1.#ctor
+  isSpec: "True"
+  fullName: Eraware.Modules.MyModule.Data.Repositories.PagedList<T>.PagedList
+  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.PagedList(Of T).PagedList
+  nameWithType: PagedList<T>.PagedList
+  nameWithType.vb: PagedList(Of T).PagedList
+- uid: Eraware.Modules.MyModule.Data.Repositories.PagedList`1.Items
+  name: Items
+  href: api/Eraware.Modules.MyModule.Data.Repositories.PagedList-1.html#Eraware_Modules_MyModule_Data_Repositories_PagedList_1_Items
+  commentId: P:Eraware.Modules.MyModule.Data.Repositories.PagedList`1.Items
+  fullName: Eraware.Modules.MyModule.Data.Repositories.PagedList<T>.Items
+  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.PagedList(Of T).Items
+  nameWithType: PagedList<T>.Items
+  nameWithType.vb: PagedList(Of T).Items
+- uid: Eraware.Modules.MyModule.Data.Repositories.PagedList`1.Items*
+  name: Items
+  href: api/Eraware.Modules.MyModule.Data.Repositories.PagedList-1.html#Eraware_Modules_MyModule_Data_Repositories_PagedList_1_Items_
+  commentId: Overload:Eraware.Modules.MyModule.Data.Repositories.PagedList`1.Items
+  isSpec: "True"
+  fullName: Eraware.Modules.MyModule.Data.Repositories.PagedList<T>.Items
+  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.PagedList(Of T).Items
+  nameWithType: PagedList<T>.Items
+  nameWithType.vb: PagedList(Of T).Items
+- uid: Eraware.Modules.MyModule.Data.Repositories.PagedList`1.Page
+  name: Page
+  href: api/Eraware.Modules.MyModule.Data.Repositories.PagedList-1.html#Eraware_Modules_MyModule_Data_Repositories_PagedList_1_Page
+  commentId: P:Eraware.Modules.MyModule.Data.Repositories.PagedList`1.Page
+  fullName: Eraware.Modules.MyModule.Data.Repositories.PagedList<T>.Page
+  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.PagedList(Of T).Page
+  nameWithType: PagedList<T>.Page
+  nameWithType.vb: PagedList(Of T).Page
+- uid: Eraware.Modules.MyModule.Data.Repositories.PagedList`1.Page*
+  name: Page
+  href: api/Eraware.Modules.MyModule.Data.Repositories.PagedList-1.html#Eraware_Modules_MyModule_Data_Repositories_PagedList_1_Page_
+  commentId: Overload:Eraware.Modules.MyModule.Data.Repositories.PagedList`1.Page
+  isSpec: "True"
+  fullName: Eraware.Modules.MyModule.Data.Repositories.PagedList<T>.Page
+  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.PagedList(Of T).Page
+  nameWithType: PagedList<T>.Page
+  nameWithType.vb: PagedList(Of T).Page
+- uid: Eraware.Modules.MyModule.Data.Repositories.PagedList`1.PageCount
+  name: PageCount
+  href: api/Eraware.Modules.MyModule.Data.Repositories.PagedList-1.html#Eraware_Modules_MyModule_Data_Repositories_PagedList_1_PageCount
+  commentId: P:Eraware.Modules.MyModule.Data.Repositories.PagedList`1.PageCount
+  fullName: Eraware.Modules.MyModule.Data.Repositories.PagedList<T>.PageCount
+  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.PagedList(Of T).PageCount
+  nameWithType: PagedList<T>.PageCount
+  nameWithType.vb: PagedList(Of T).PageCount
+- uid: Eraware.Modules.MyModule.Data.Repositories.PagedList`1.PageCount*
+  name: PageCount
+  href: api/Eraware.Modules.MyModule.Data.Repositories.PagedList-1.html#Eraware_Modules_MyModule_Data_Repositories_PagedList_1_PageCount_
+  commentId: Overload:Eraware.Modules.MyModule.Data.Repositories.PagedList`1.PageCount
+  isSpec: "True"
+  fullName: Eraware.Modules.MyModule.Data.Repositories.PagedList<T>.PageCount
+  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.PagedList(Of T).PageCount
+  nameWithType: PagedList<T>.PageCount
+  nameWithType.vb: PagedList(Of T).PageCount
+- uid: Eraware.Modules.MyModule.Data.Repositories.PagedList`1.PageSize
+  name: PageSize
+  href: api/Eraware.Modules.MyModule.Data.Repositories.PagedList-1.html#Eraware_Modules_MyModule_Data_Repositories_PagedList_1_PageSize
+  commentId: P:Eraware.Modules.MyModule.Data.Repositories.PagedList`1.PageSize
+  fullName: Eraware.Modules.MyModule.Data.Repositories.PagedList<T>.PageSize
+  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.PagedList(Of T).PageSize
+  nameWithType: PagedList<T>.PageSize
+  nameWithType.vb: PagedList(Of T).PageSize
+- uid: Eraware.Modules.MyModule.Data.Repositories.PagedList`1.PageSize*
+  name: PageSize
+  href: api/Eraware.Modules.MyModule.Data.Repositories.PagedList-1.html#Eraware_Modules_MyModule_Data_Repositories_PagedList_1_PageSize_
+  commentId: Overload:Eraware.Modules.MyModule.Data.Repositories.PagedList`1.PageSize
+  isSpec: "True"
+  fullName: Eraware.Modules.MyModule.Data.Repositories.PagedList<T>.PageSize
+  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.PagedList(Of T).PageSize
+  nameWithType: PagedList<T>.PageSize
+  nameWithType.vb: PagedList(Of T).PageSize
+- uid: Eraware.Modules.MyModule.Data.Repositories.PagedList`1.ResultCount
+  name: ResultCount
+  href: api/Eraware.Modules.MyModule.Data.Repositories.PagedList-1.html#Eraware_Modules_MyModule_Data_Repositories_PagedList_1_ResultCount
+  commentId: P:Eraware.Modules.MyModule.Data.Repositories.PagedList`1.ResultCount
+  fullName: Eraware.Modules.MyModule.Data.Repositories.PagedList<T>.ResultCount
+  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.PagedList(Of T).ResultCount
+  nameWithType: PagedList<T>.ResultCount
+  nameWithType.vb: PagedList(Of T).ResultCount
+- uid: Eraware.Modules.MyModule.Data.Repositories.PagedList`1.ResultCount*
+  name: ResultCount
+  href: api/Eraware.Modules.MyModule.Data.Repositories.PagedList-1.html#Eraware_Modules_MyModule_Data_Repositories_PagedList_1_ResultCount_
+  commentId: Overload:Eraware.Modules.MyModule.Data.Repositories.PagedList`1.ResultCount
+  isSpec: "True"
+  fullName: Eraware.Modules.MyModule.Data.Repositories.PagedList<T>.ResultCount
+  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.PagedList(Of T).ResultCount
+  nameWithType: PagedList<T>.ResultCount
+  nameWithType.vb: PagedList(Of T).ResultCount
 - uid: Eraware.Modules.MyModule.Data.Repositories.Repository`1
   name: Repository<T>
   href: api/Eraware.Modules.MyModule.Data.Repositories.Repository-1.html
@@ -565,40 +695,40 @@ references:
   fullName.vb: Eraware.Modules.MyModule.Data.Repositories.Repository(Of T).Repository
   nameWithType: Repository<T>.Repository
   nameWithType.vb: Repository(Of T).Repository
-- uid: Eraware.Modules.MyModule.Data.Repositories.Repository`1.Create(`0,System.Int32)
-  name: Create(T, Int32)
-  href: api/Eraware.Modules.MyModule.Data.Repositories.Repository-1.html#Eraware_Modules_MyModule_Data_Repositories_Repository_1_Create__0_System_Int32_
-  commentId: M:Eraware.Modules.MyModule.Data.Repositories.Repository`1.Create(`0,System.Int32)
-  fullName: Eraware.Modules.MyModule.Data.Repositories.Repository<T>.Create(T, System.Int32)
-  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.Repository(Of T).Create(T, System.Int32)
-  nameWithType: Repository<T>.Create(T, Int32)
-  nameWithType.vb: Repository(Of T).Create(T, Int32)
-- uid: Eraware.Modules.MyModule.Data.Repositories.Repository`1.Create*
-  name: Create
-  href: api/Eraware.Modules.MyModule.Data.Repositories.Repository-1.html#Eraware_Modules_MyModule_Data_Repositories_Repository_1_Create_
-  commentId: Overload:Eraware.Modules.MyModule.Data.Repositories.Repository`1.Create
+- uid: Eraware.Modules.MyModule.Data.Repositories.Repository`1.CreateAsync(`0,System.Int32)
+  name: CreateAsync(T, Int32)
+  href: api/Eraware.Modules.MyModule.Data.Repositories.Repository-1.html#Eraware_Modules_MyModule_Data_Repositories_Repository_1_CreateAsync__0_System_Int32_
+  commentId: M:Eraware.Modules.MyModule.Data.Repositories.Repository`1.CreateAsync(`0,System.Int32)
+  fullName: Eraware.Modules.MyModule.Data.Repositories.Repository<T>.CreateAsync(T, System.Int32)
+  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.Repository(Of T).CreateAsync(T, System.Int32)
+  nameWithType: Repository<T>.CreateAsync(T, Int32)
+  nameWithType.vb: Repository(Of T).CreateAsync(T, Int32)
+- uid: Eraware.Modules.MyModule.Data.Repositories.Repository`1.CreateAsync*
+  name: CreateAsync
+  href: api/Eraware.Modules.MyModule.Data.Repositories.Repository-1.html#Eraware_Modules_MyModule_Data_Repositories_Repository_1_CreateAsync_
+  commentId: Overload:Eraware.Modules.MyModule.Data.Repositories.Repository`1.CreateAsync
   isSpec: "True"
-  fullName: Eraware.Modules.MyModule.Data.Repositories.Repository<T>.Create
-  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.Repository(Of T).Create
-  nameWithType: Repository<T>.Create
-  nameWithType.vb: Repository(Of T).Create
-- uid: Eraware.Modules.MyModule.Data.Repositories.Repository`1.Delete(System.Int32)
-  name: Delete(Int32)
-  href: api/Eraware.Modules.MyModule.Data.Repositories.Repository-1.html#Eraware_Modules_MyModule_Data_Repositories_Repository_1_Delete_System_Int32_
-  commentId: M:Eraware.Modules.MyModule.Data.Repositories.Repository`1.Delete(System.Int32)
-  fullName: Eraware.Modules.MyModule.Data.Repositories.Repository<T>.Delete(System.Int32)
-  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.Repository(Of T).Delete(System.Int32)
-  nameWithType: Repository<T>.Delete(Int32)
-  nameWithType.vb: Repository(Of T).Delete(Int32)
-- uid: Eraware.Modules.MyModule.Data.Repositories.Repository`1.Delete*
-  name: Delete
-  href: api/Eraware.Modules.MyModule.Data.Repositories.Repository-1.html#Eraware_Modules_MyModule_Data_Repositories_Repository_1_Delete_
-  commentId: Overload:Eraware.Modules.MyModule.Data.Repositories.Repository`1.Delete
+  fullName: Eraware.Modules.MyModule.Data.Repositories.Repository<T>.CreateAsync
+  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.Repository(Of T).CreateAsync
+  nameWithType: Repository<T>.CreateAsync
+  nameWithType.vb: Repository(Of T).CreateAsync
+- uid: Eraware.Modules.MyModule.Data.Repositories.Repository`1.DeleteAsync(System.Int32)
+  name: DeleteAsync(Int32)
+  href: api/Eraware.Modules.MyModule.Data.Repositories.Repository-1.html#Eraware_Modules_MyModule_Data_Repositories_Repository_1_DeleteAsync_System_Int32_
+  commentId: M:Eraware.Modules.MyModule.Data.Repositories.Repository`1.DeleteAsync(System.Int32)
+  fullName: Eraware.Modules.MyModule.Data.Repositories.Repository<T>.DeleteAsync(System.Int32)
+  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.Repository(Of T).DeleteAsync(System.Int32)
+  nameWithType: Repository<T>.DeleteAsync(Int32)
+  nameWithType.vb: Repository(Of T).DeleteAsync(Int32)
+- uid: Eraware.Modules.MyModule.Data.Repositories.Repository`1.DeleteAsync*
+  name: DeleteAsync
+  href: api/Eraware.Modules.MyModule.Data.Repositories.Repository-1.html#Eraware_Modules_MyModule_Data_Repositories_Repository_1_DeleteAsync_
+  commentId: Overload:Eraware.Modules.MyModule.Data.Repositories.Repository`1.DeleteAsync
   isSpec: "True"
-  fullName: Eraware.Modules.MyModule.Data.Repositories.Repository<T>.Delete
-  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.Repository(Of T).Delete
-  nameWithType: Repository<T>.Delete
-  nameWithType.vb: Repository(Of T).Delete
+  fullName: Eraware.Modules.MyModule.Data.Repositories.Repository<T>.DeleteAsync
+  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.Repository(Of T).DeleteAsync
+  nameWithType: Repository<T>.DeleteAsync
+  nameWithType.vb: Repository(Of T).DeleteAsync
 - uid: Eraware.Modules.MyModule.Data.Repositories.Repository`1.Get
   name: Get()
   href: api/Eraware.Modules.MyModule.Data.Repositories.Repository-1.html#Eraware_Modules_MyModule_Data_Repositories_Repository_1_Get
@@ -616,57 +746,75 @@ references:
   fullName.vb: Eraware.Modules.MyModule.Data.Repositories.Repository(Of T).Get
   nameWithType: Repository<T>.Get
   nameWithType.vb: Repository(Of T).Get
-- uid: Eraware.Modules.MyModule.Data.Repositories.Repository`1.GetAll
-  name: GetAll()
-  href: api/Eraware.Modules.MyModule.Data.Repositories.Repository-1.html#Eraware_Modules_MyModule_Data_Repositories_Repository_1_GetAll
-  commentId: M:Eraware.Modules.MyModule.Data.Repositories.Repository`1.GetAll
-  fullName: Eraware.Modules.MyModule.Data.Repositories.Repository<T>.GetAll()
-  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.Repository(Of T).GetAll()
-  nameWithType: Repository<T>.GetAll()
-  nameWithType.vb: Repository(Of T).GetAll()
-- uid: Eraware.Modules.MyModule.Data.Repositories.Repository`1.GetAll*
-  name: GetAll
-  href: api/Eraware.Modules.MyModule.Data.Repositories.Repository-1.html#Eraware_Modules_MyModule_Data_Repositories_Repository_1_GetAll_
-  commentId: Overload:Eraware.Modules.MyModule.Data.Repositories.Repository`1.GetAll
+- uid: Eraware.Modules.MyModule.Data.Repositories.Repository`1.GetAllAsync
+  name: GetAllAsync()
+  href: api/Eraware.Modules.MyModule.Data.Repositories.Repository-1.html#Eraware_Modules_MyModule_Data_Repositories_Repository_1_GetAllAsync
+  commentId: M:Eraware.Modules.MyModule.Data.Repositories.Repository`1.GetAllAsync
+  fullName: Eraware.Modules.MyModule.Data.Repositories.Repository<T>.GetAllAsync()
+  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.Repository(Of T).GetAllAsync()
+  nameWithType: Repository<T>.GetAllAsync()
+  nameWithType.vb: Repository(Of T).GetAllAsync()
+- uid: Eraware.Modules.MyModule.Data.Repositories.Repository`1.GetAllAsync*
+  name: GetAllAsync
+  href: api/Eraware.Modules.MyModule.Data.Repositories.Repository-1.html#Eraware_Modules_MyModule_Data_Repositories_Repository_1_GetAllAsync_
+  commentId: Overload:Eraware.Modules.MyModule.Data.Repositories.Repository`1.GetAllAsync
   isSpec: "True"
-  fullName: Eraware.Modules.MyModule.Data.Repositories.Repository<T>.GetAll
-  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.Repository(Of T).GetAll
-  nameWithType: Repository<T>.GetAll
-  nameWithType.vb: Repository(Of T).GetAll
-- uid: Eraware.Modules.MyModule.Data.Repositories.Repository`1.GetById(System.Int32)
-  name: GetById(Int32)
-  href: api/Eraware.Modules.MyModule.Data.Repositories.Repository-1.html#Eraware_Modules_MyModule_Data_Repositories_Repository_1_GetById_System_Int32_
-  commentId: M:Eraware.Modules.MyModule.Data.Repositories.Repository`1.GetById(System.Int32)
-  fullName: Eraware.Modules.MyModule.Data.Repositories.Repository<T>.GetById(System.Int32)
-  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.Repository(Of T).GetById(System.Int32)
-  nameWithType: Repository<T>.GetById(Int32)
-  nameWithType.vb: Repository(Of T).GetById(Int32)
-- uid: Eraware.Modules.MyModule.Data.Repositories.Repository`1.GetById*
-  name: GetById
-  href: api/Eraware.Modules.MyModule.Data.Repositories.Repository-1.html#Eraware_Modules_MyModule_Data_Repositories_Repository_1_GetById_
-  commentId: Overload:Eraware.Modules.MyModule.Data.Repositories.Repository`1.GetById
+  fullName: Eraware.Modules.MyModule.Data.Repositories.Repository<T>.GetAllAsync
+  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.Repository(Of T).GetAllAsync
+  nameWithType: Repository<T>.GetAllAsync
+  nameWithType.vb: Repository(Of T).GetAllAsync
+- uid: Eraware.Modules.MyModule.Data.Repositories.Repository`1.GetByIdAsync(System.Int32)
+  name: GetByIdAsync(Int32)
+  href: api/Eraware.Modules.MyModule.Data.Repositories.Repository-1.html#Eraware_Modules_MyModule_Data_Repositories_Repository_1_GetByIdAsync_System_Int32_
+  commentId: M:Eraware.Modules.MyModule.Data.Repositories.Repository`1.GetByIdAsync(System.Int32)
+  fullName: Eraware.Modules.MyModule.Data.Repositories.Repository<T>.GetByIdAsync(System.Int32)
+  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.Repository(Of T).GetByIdAsync(System.Int32)
+  nameWithType: Repository<T>.GetByIdAsync(Int32)
+  nameWithType.vb: Repository(Of T).GetByIdAsync(Int32)
+- uid: Eraware.Modules.MyModule.Data.Repositories.Repository`1.GetByIdAsync*
+  name: GetByIdAsync
+  href: api/Eraware.Modules.MyModule.Data.Repositories.Repository-1.html#Eraware_Modules_MyModule_Data_Repositories_Repository_1_GetByIdAsync_
+  commentId: Overload:Eraware.Modules.MyModule.Data.Repositories.Repository`1.GetByIdAsync
   isSpec: "True"
-  fullName: Eraware.Modules.MyModule.Data.Repositories.Repository<T>.GetById
-  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.Repository(Of T).GetById
-  nameWithType: Repository<T>.GetById
-  nameWithType.vb: Repository(Of T).GetById
-- uid: Eraware.Modules.MyModule.Data.Repositories.Repository`1.Update(`0,System.Int32)
-  name: Update(T, Int32)
-  href: api/Eraware.Modules.MyModule.Data.Repositories.Repository-1.html#Eraware_Modules_MyModule_Data_Repositories_Repository_1_Update__0_System_Int32_
-  commentId: M:Eraware.Modules.MyModule.Data.Repositories.Repository`1.Update(`0,System.Int32)
-  fullName: Eraware.Modules.MyModule.Data.Repositories.Repository<T>.Update(T, System.Int32)
-  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.Repository(Of T).Update(T, System.Int32)
-  nameWithType: Repository<T>.Update(T, Int32)
-  nameWithType.vb: Repository(Of T).Update(T, Int32)
-- uid: Eraware.Modules.MyModule.Data.Repositories.Repository`1.Update*
-  name: Update
-  href: api/Eraware.Modules.MyModule.Data.Repositories.Repository-1.html#Eraware_Modules_MyModule_Data_Repositories_Repository_1_Update_
-  commentId: Overload:Eraware.Modules.MyModule.Data.Repositories.Repository`1.Update
+  fullName: Eraware.Modules.MyModule.Data.Repositories.Repository<T>.GetByIdAsync
+  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.Repository(Of T).GetByIdAsync
+  nameWithType: Repository<T>.GetByIdAsync
+  nameWithType.vb: Repository(Of T).GetByIdAsync
+- uid: Eraware.Modules.MyModule.Data.Repositories.Repository`1.GetPageAsync(System.Int32,System.Int32,System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}},System.Linq.Expressions.Expression{System.Func{`0,System.Object}}[])
+  name: GetPageAsync(Int32, Int32, Func<IQueryable<T>, IOrderedQueryable<T>>, Expression<Func<T, Object>>[])
+  href: api/Eraware.Modules.MyModule.Data.Repositories.Repository-1.html#Eraware_Modules_MyModule_Data_Repositories_Repository_1_GetPageAsync_System_Int32_System_Int32_System_Func_System_Linq_IQueryable__0__System_Linq_IOrderedQueryable__0___System_Linq_Expressions_Expression_System_Func__0_System_Object_____
+  commentId: M:Eraware.Modules.MyModule.Data.Repositories.Repository`1.GetPageAsync(System.Int32,System.Int32,System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}},System.Linq.Expressions.Expression{System.Func{`0,System.Object}}[])
+  name.vb: GetPageAsync(Int32, Int32, Func(Of IQueryable(Of T), IOrderedQueryable(Of T)), Expression(Of Func(Of T, Object))())
+  fullName: Eraware.Modules.MyModule.Data.Repositories.Repository<T>.GetPageAsync(System.Int32, System.Int32, System.Func<System.Linq.IQueryable<T>, System.Linq.IOrderedQueryable<T>>, System.Linq.Expressions.Expression<System.Func<T, System.Object>>[])
+  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.Repository(Of T).GetPageAsync(System.Int32, System.Int32, System.Func(Of System.Linq.IQueryable(Of T), System.Linq.IOrderedQueryable(Of T)), System.Linq.Expressions.Expression(Of System.Func(Of T, System.Object))())
+  nameWithType: Repository<T>.GetPageAsync(Int32, Int32, Func<IQueryable<T>, IOrderedQueryable<T>>, Expression<Func<T, Object>>[])
+  nameWithType.vb: Repository(Of T).GetPageAsync(Int32, Int32, Func(Of IQueryable(Of T), IOrderedQueryable(Of T)), Expression(Of Func(Of T, Object))())
+- uid: Eraware.Modules.MyModule.Data.Repositories.Repository`1.GetPageAsync*
+  name: GetPageAsync
+  href: api/Eraware.Modules.MyModule.Data.Repositories.Repository-1.html#Eraware_Modules_MyModule_Data_Repositories_Repository_1_GetPageAsync_
+  commentId: Overload:Eraware.Modules.MyModule.Data.Repositories.Repository`1.GetPageAsync
   isSpec: "True"
-  fullName: Eraware.Modules.MyModule.Data.Repositories.Repository<T>.Update
-  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.Repository(Of T).Update
-  nameWithType: Repository<T>.Update
-  nameWithType.vb: Repository(Of T).Update
+  fullName: Eraware.Modules.MyModule.Data.Repositories.Repository<T>.GetPageAsync
+  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.Repository(Of T).GetPageAsync
+  nameWithType: Repository<T>.GetPageAsync
+  nameWithType.vb: Repository(Of T).GetPageAsync
+- uid: Eraware.Modules.MyModule.Data.Repositories.Repository`1.UpdateAsync(`0,System.Int32)
+  name: UpdateAsync(T, Int32)
+  href: api/Eraware.Modules.MyModule.Data.Repositories.Repository-1.html#Eraware_Modules_MyModule_Data_Repositories_Repository_1_UpdateAsync__0_System_Int32_
+  commentId: M:Eraware.Modules.MyModule.Data.Repositories.Repository`1.UpdateAsync(`0,System.Int32)
+  fullName: Eraware.Modules.MyModule.Data.Repositories.Repository<T>.UpdateAsync(T, System.Int32)
+  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.Repository(Of T).UpdateAsync(T, System.Int32)
+  nameWithType: Repository<T>.UpdateAsync(T, Int32)
+  nameWithType.vb: Repository(Of T).UpdateAsync(T, Int32)
+- uid: Eraware.Modules.MyModule.Data.Repositories.Repository`1.UpdateAsync*
+  name: UpdateAsync
+  href: api/Eraware.Modules.MyModule.Data.Repositories.Repository-1.html#Eraware_Modules_MyModule_Data_Repositories_Repository_1_UpdateAsync_
+  commentId: Overload:Eraware.Modules.MyModule.Data.Repositories.Repository`1.UpdateAsync
+  isSpec: "True"
+  fullName: Eraware.Modules.MyModule.Data.Repositories.Repository<T>.UpdateAsync
+  fullName.vb: Eraware.Modules.MyModule.Data.Repositories.Repository(Of T).UpdateAsync
+  nameWithType: Repository<T>.UpdateAsync
+  nameWithType.vb: Repository(Of T).UpdateAsync
 - uid: Eraware.Modules.MyModule.DTO
   name: Eraware.Modules.MyModule.DTO
   href: api/Eraware.Modules.MyModule.DTO.html
@@ -794,58 +942,58 @@ references:
   commentId: T:Eraware.Modules.MyModule.Services.IItemService
   fullName: Eraware.Modules.MyModule.Services.IItemService
   nameWithType: IItemService
-- uid: Eraware.Modules.MyModule.Services.IItemService.CreateItem(Eraware.Modules.MyModule.DTO.CreateItemDTO,System.Int32)
-  name: CreateItem(CreateItemDTO, Int32)
-  href: api/Eraware.Modules.MyModule.Services.IItemService.html#Eraware_Modules_MyModule_Services_IItemService_CreateItem_Eraware_Modules_MyModule_DTO_CreateItemDTO_System_Int32_
-  commentId: M:Eraware.Modules.MyModule.Services.IItemService.CreateItem(Eraware.Modules.MyModule.DTO.CreateItemDTO,System.Int32)
-  fullName: Eraware.Modules.MyModule.Services.IItemService.CreateItem(Eraware.Modules.MyModule.DTO.CreateItemDTO, System.Int32)
-  nameWithType: IItemService.CreateItem(CreateItemDTO, Int32)
-- uid: Eraware.Modules.MyModule.Services.IItemService.CreateItem*
-  name: CreateItem
-  href: api/Eraware.Modules.MyModule.Services.IItemService.html#Eraware_Modules_MyModule_Services_IItemService_CreateItem_
-  commentId: Overload:Eraware.Modules.MyModule.Services.IItemService.CreateItem
+- uid: Eraware.Modules.MyModule.Services.IItemService.CreateItemAsync(Eraware.Modules.MyModule.DTO.CreateItemDTO,System.Int32)
+  name: CreateItemAsync(CreateItemDTO, Int32)
+  href: api/Eraware.Modules.MyModule.Services.IItemService.html#Eraware_Modules_MyModule_Services_IItemService_CreateItemAsync_Eraware_Modules_MyModule_DTO_CreateItemDTO_System_Int32_
+  commentId: M:Eraware.Modules.MyModule.Services.IItemService.CreateItemAsync(Eraware.Modules.MyModule.DTO.CreateItemDTO,System.Int32)
+  fullName: Eraware.Modules.MyModule.Services.IItemService.CreateItemAsync(Eraware.Modules.MyModule.DTO.CreateItemDTO, System.Int32)
+  nameWithType: IItemService.CreateItemAsync(CreateItemDTO, Int32)
+- uid: Eraware.Modules.MyModule.Services.IItemService.CreateItemAsync*
+  name: CreateItemAsync
+  href: api/Eraware.Modules.MyModule.Services.IItemService.html#Eraware_Modules_MyModule_Services_IItemService_CreateItemAsync_
+  commentId: Overload:Eraware.Modules.MyModule.Services.IItemService.CreateItemAsync
   isSpec: "True"
-  fullName: Eraware.Modules.MyModule.Services.IItemService.CreateItem
-  nameWithType: IItemService.CreateItem
-- uid: Eraware.Modules.MyModule.Services.IItemService.DeleteItem(System.Int32)
-  name: DeleteItem(Int32)
-  href: api/Eraware.Modules.MyModule.Services.IItemService.html#Eraware_Modules_MyModule_Services_IItemService_DeleteItem_System_Int32_
-  commentId: M:Eraware.Modules.MyModule.Services.IItemService.DeleteItem(System.Int32)
-  fullName: Eraware.Modules.MyModule.Services.IItemService.DeleteItem(System.Int32)
-  nameWithType: IItemService.DeleteItem(Int32)
-- uid: Eraware.Modules.MyModule.Services.IItemService.DeleteItem*
-  name: DeleteItem
-  href: api/Eraware.Modules.MyModule.Services.IItemService.html#Eraware_Modules_MyModule_Services_IItemService_DeleteItem_
-  commentId: Overload:Eraware.Modules.MyModule.Services.IItemService.DeleteItem
+  fullName: Eraware.Modules.MyModule.Services.IItemService.CreateItemAsync
+  nameWithType: IItemService.CreateItemAsync
+- uid: Eraware.Modules.MyModule.Services.IItemService.DeleteItemAsync(System.Int32)
+  name: DeleteItemAsync(Int32)
+  href: api/Eraware.Modules.MyModule.Services.IItemService.html#Eraware_Modules_MyModule_Services_IItemService_DeleteItemAsync_System_Int32_
+  commentId: M:Eraware.Modules.MyModule.Services.IItemService.DeleteItemAsync(System.Int32)
+  fullName: Eraware.Modules.MyModule.Services.IItemService.DeleteItemAsync(System.Int32)
+  nameWithType: IItemService.DeleteItemAsync(Int32)
+- uid: Eraware.Modules.MyModule.Services.IItemService.DeleteItemAsync*
+  name: DeleteItemAsync
+  href: api/Eraware.Modules.MyModule.Services.IItemService.html#Eraware_Modules_MyModule_Services_IItemService_DeleteItemAsync_
+  commentId: Overload:Eraware.Modules.MyModule.Services.IItemService.DeleteItemAsync
   isSpec: "True"
-  fullName: Eraware.Modules.MyModule.Services.IItemService.DeleteItem
-  nameWithType: IItemService.DeleteItem
-- uid: Eraware.Modules.MyModule.Services.IItemService.GetItemsPage(System.String,System.Int32,System.Int32,System.Boolean)
-  name: GetItemsPage(String, Int32, Int32, Boolean)
-  href: api/Eraware.Modules.MyModule.Services.IItemService.html#Eraware_Modules_MyModule_Services_IItemService_GetItemsPage_System_String_System_Int32_System_Int32_System_Boolean_
-  commentId: M:Eraware.Modules.MyModule.Services.IItemService.GetItemsPage(System.String,System.Int32,System.Int32,System.Boolean)
-  fullName: Eraware.Modules.MyModule.Services.IItemService.GetItemsPage(System.String, System.Int32, System.Int32, System.Boolean)
-  nameWithType: IItemService.GetItemsPage(String, Int32, Int32, Boolean)
-- uid: Eraware.Modules.MyModule.Services.IItemService.GetItemsPage*
-  name: GetItemsPage
-  href: api/Eraware.Modules.MyModule.Services.IItemService.html#Eraware_Modules_MyModule_Services_IItemService_GetItemsPage_
-  commentId: Overload:Eraware.Modules.MyModule.Services.IItemService.GetItemsPage
+  fullName: Eraware.Modules.MyModule.Services.IItemService.DeleteItemAsync
+  nameWithType: IItemService.DeleteItemAsync
+- uid: Eraware.Modules.MyModule.Services.IItemService.GetItemsPageAsync(System.String,System.Int32,System.Int32,System.Boolean)
+  name: GetItemsPageAsync(String, Int32, Int32, Boolean)
+  href: api/Eraware.Modules.MyModule.Services.IItemService.html#Eraware_Modules_MyModule_Services_IItemService_GetItemsPageAsync_System_String_System_Int32_System_Int32_System_Boolean_
+  commentId: M:Eraware.Modules.MyModule.Services.IItemService.GetItemsPageAsync(System.String,System.Int32,System.Int32,System.Boolean)
+  fullName: Eraware.Modules.MyModule.Services.IItemService.GetItemsPageAsync(System.String, System.Int32, System.Int32, System.Boolean)
+  nameWithType: IItemService.GetItemsPageAsync(String, Int32, Int32, Boolean)
+- uid: Eraware.Modules.MyModule.Services.IItemService.GetItemsPageAsync*
+  name: GetItemsPageAsync
+  href: api/Eraware.Modules.MyModule.Services.IItemService.html#Eraware_Modules_MyModule_Services_IItemService_GetItemsPageAsync_
+  commentId: Overload:Eraware.Modules.MyModule.Services.IItemService.GetItemsPageAsync
   isSpec: "True"
-  fullName: Eraware.Modules.MyModule.Services.IItemService.GetItemsPage
-  nameWithType: IItemService.GetItemsPage
-- uid: Eraware.Modules.MyModule.Services.IItemService.UpdateItem(Eraware.Modules.MyModule.DTO.UpdateItemDTO,System.Int32)
-  name: UpdateItem(UpdateItemDTO, Int32)
-  href: api/Eraware.Modules.MyModule.Services.IItemService.html#Eraware_Modules_MyModule_Services_IItemService_UpdateItem_Eraware_Modules_MyModule_DTO_UpdateItemDTO_System_Int32_
-  commentId: M:Eraware.Modules.MyModule.Services.IItemService.UpdateItem(Eraware.Modules.MyModule.DTO.UpdateItemDTO,System.Int32)
-  fullName: Eraware.Modules.MyModule.Services.IItemService.UpdateItem(Eraware.Modules.MyModule.DTO.UpdateItemDTO, System.Int32)
-  nameWithType: IItemService.UpdateItem(UpdateItemDTO, Int32)
-- uid: Eraware.Modules.MyModule.Services.IItemService.UpdateItem*
-  name: UpdateItem
-  href: api/Eraware.Modules.MyModule.Services.IItemService.html#Eraware_Modules_MyModule_Services_IItemService_UpdateItem_
-  commentId: Overload:Eraware.Modules.MyModule.Services.IItemService.UpdateItem
+  fullName: Eraware.Modules.MyModule.Services.IItemService.GetItemsPageAsync
+  nameWithType: IItemService.GetItemsPageAsync
+- uid: Eraware.Modules.MyModule.Services.IItemService.UpdateItemAsync(Eraware.Modules.MyModule.DTO.UpdateItemDTO,System.Int32)
+  name: UpdateItemAsync(UpdateItemDTO, Int32)
+  href: api/Eraware.Modules.MyModule.Services.IItemService.html#Eraware_Modules_MyModule_Services_IItemService_UpdateItemAsync_Eraware_Modules_MyModule_DTO_UpdateItemDTO_System_Int32_
+  commentId: M:Eraware.Modules.MyModule.Services.IItemService.UpdateItemAsync(Eraware.Modules.MyModule.DTO.UpdateItemDTO,System.Int32)
+  fullName: Eraware.Modules.MyModule.Services.IItemService.UpdateItemAsync(Eraware.Modules.MyModule.DTO.UpdateItemDTO, System.Int32)
+  nameWithType: IItemService.UpdateItemAsync(UpdateItemDTO, Int32)
+- uid: Eraware.Modules.MyModule.Services.IItemService.UpdateItemAsync*
+  name: UpdateItemAsync
+  href: api/Eraware.Modules.MyModule.Services.IItemService.html#Eraware_Modules_MyModule_Services_IItemService_UpdateItemAsync_
+  commentId: Overload:Eraware.Modules.MyModule.Services.IItemService.UpdateItemAsync
   isSpec: "True"
-  fullName: Eraware.Modules.MyModule.Services.IItemService.UpdateItem
-  nameWithType: IItemService.UpdateItem
+  fullName: Eraware.Modules.MyModule.Services.IItemService.UpdateItemAsync
+  nameWithType: IItemService.UpdateItemAsync
 - uid: Eraware.Modules.MyModule.Services.ILocalizationService
   name: ILocalizationService
   href: api/Eraware.Modules.MyModule.Services.ILocalizationService.html
@@ -887,58 +1035,58 @@ references:
   isSpec: "True"
   fullName: Eraware.Modules.MyModule.Services.ItemService.ItemService
   nameWithType: ItemService.ItemService
-- uid: Eraware.Modules.MyModule.Services.ItemService.CreateItem(Eraware.Modules.MyModule.DTO.CreateItemDTO,System.Int32)
-  name: CreateItem(CreateItemDTO, Int32)
-  href: api/Eraware.Modules.MyModule.Services.ItemService.html#Eraware_Modules_MyModule_Services_ItemService_CreateItem_Eraware_Modules_MyModule_DTO_CreateItemDTO_System_Int32_
-  commentId: M:Eraware.Modules.MyModule.Services.ItemService.CreateItem(Eraware.Modules.MyModule.DTO.CreateItemDTO,System.Int32)
-  fullName: Eraware.Modules.MyModule.Services.ItemService.CreateItem(Eraware.Modules.MyModule.DTO.CreateItemDTO, System.Int32)
-  nameWithType: ItemService.CreateItem(CreateItemDTO, Int32)
-- uid: Eraware.Modules.MyModule.Services.ItemService.CreateItem*
-  name: CreateItem
-  href: api/Eraware.Modules.MyModule.Services.ItemService.html#Eraware_Modules_MyModule_Services_ItemService_CreateItem_
-  commentId: Overload:Eraware.Modules.MyModule.Services.ItemService.CreateItem
+- uid: Eraware.Modules.MyModule.Services.ItemService.CreateItemAsync(Eraware.Modules.MyModule.DTO.CreateItemDTO,System.Int32)
+  name: CreateItemAsync(CreateItemDTO, Int32)
+  href: api/Eraware.Modules.MyModule.Services.ItemService.html#Eraware_Modules_MyModule_Services_ItemService_CreateItemAsync_Eraware_Modules_MyModule_DTO_CreateItemDTO_System_Int32_
+  commentId: M:Eraware.Modules.MyModule.Services.ItemService.CreateItemAsync(Eraware.Modules.MyModule.DTO.CreateItemDTO,System.Int32)
+  fullName: Eraware.Modules.MyModule.Services.ItemService.CreateItemAsync(Eraware.Modules.MyModule.DTO.CreateItemDTO, System.Int32)
+  nameWithType: ItemService.CreateItemAsync(CreateItemDTO, Int32)
+- uid: Eraware.Modules.MyModule.Services.ItemService.CreateItemAsync*
+  name: CreateItemAsync
+  href: api/Eraware.Modules.MyModule.Services.ItemService.html#Eraware_Modules_MyModule_Services_ItemService_CreateItemAsync_
+  commentId: Overload:Eraware.Modules.MyModule.Services.ItemService.CreateItemAsync
   isSpec: "True"
-  fullName: Eraware.Modules.MyModule.Services.ItemService.CreateItem
-  nameWithType: ItemService.CreateItem
-- uid: Eraware.Modules.MyModule.Services.ItemService.DeleteItem(System.Int32)
-  name: DeleteItem(Int32)
-  href: api/Eraware.Modules.MyModule.Services.ItemService.html#Eraware_Modules_MyModule_Services_ItemService_DeleteItem_System_Int32_
-  commentId: M:Eraware.Modules.MyModule.Services.ItemService.DeleteItem(System.Int32)
-  fullName: Eraware.Modules.MyModule.Services.ItemService.DeleteItem(System.Int32)
-  nameWithType: ItemService.DeleteItem(Int32)
-- uid: Eraware.Modules.MyModule.Services.ItemService.DeleteItem*
-  name: DeleteItem
-  href: api/Eraware.Modules.MyModule.Services.ItemService.html#Eraware_Modules_MyModule_Services_ItemService_DeleteItem_
-  commentId: Overload:Eraware.Modules.MyModule.Services.ItemService.DeleteItem
+  fullName: Eraware.Modules.MyModule.Services.ItemService.CreateItemAsync
+  nameWithType: ItemService.CreateItemAsync
+- uid: Eraware.Modules.MyModule.Services.ItemService.DeleteItemAsync(System.Int32)
+  name: DeleteItemAsync(Int32)
+  href: api/Eraware.Modules.MyModule.Services.ItemService.html#Eraware_Modules_MyModule_Services_ItemService_DeleteItemAsync_System_Int32_
+  commentId: M:Eraware.Modules.MyModule.Services.ItemService.DeleteItemAsync(System.Int32)
+  fullName: Eraware.Modules.MyModule.Services.ItemService.DeleteItemAsync(System.Int32)
+  nameWithType: ItemService.DeleteItemAsync(Int32)
+- uid: Eraware.Modules.MyModule.Services.ItemService.DeleteItemAsync*
+  name: DeleteItemAsync
+  href: api/Eraware.Modules.MyModule.Services.ItemService.html#Eraware_Modules_MyModule_Services_ItemService_DeleteItemAsync_
+  commentId: Overload:Eraware.Modules.MyModule.Services.ItemService.DeleteItemAsync
   isSpec: "True"
-  fullName: Eraware.Modules.MyModule.Services.ItemService.DeleteItem
-  nameWithType: ItemService.DeleteItem
-- uid: Eraware.Modules.MyModule.Services.ItemService.GetItemsPage(System.String,System.Int32,System.Int32,System.Boolean)
-  name: GetItemsPage(String, Int32, Int32, Boolean)
-  href: api/Eraware.Modules.MyModule.Services.ItemService.html#Eraware_Modules_MyModule_Services_ItemService_GetItemsPage_System_String_System_Int32_System_Int32_System_Boolean_
-  commentId: M:Eraware.Modules.MyModule.Services.ItemService.GetItemsPage(System.String,System.Int32,System.Int32,System.Boolean)
-  fullName: Eraware.Modules.MyModule.Services.ItemService.GetItemsPage(System.String, System.Int32, System.Int32, System.Boolean)
-  nameWithType: ItemService.GetItemsPage(String, Int32, Int32, Boolean)
-- uid: Eraware.Modules.MyModule.Services.ItemService.GetItemsPage*
-  name: GetItemsPage
-  href: api/Eraware.Modules.MyModule.Services.ItemService.html#Eraware_Modules_MyModule_Services_ItemService_GetItemsPage_
-  commentId: Overload:Eraware.Modules.MyModule.Services.ItemService.GetItemsPage
+  fullName: Eraware.Modules.MyModule.Services.ItemService.DeleteItemAsync
+  nameWithType: ItemService.DeleteItemAsync
+- uid: Eraware.Modules.MyModule.Services.ItemService.GetItemsPageAsync(System.String,System.Int32,System.Int32,System.Boolean)
+  name: GetItemsPageAsync(String, Int32, Int32, Boolean)
+  href: api/Eraware.Modules.MyModule.Services.ItemService.html#Eraware_Modules_MyModule_Services_ItemService_GetItemsPageAsync_System_String_System_Int32_System_Int32_System_Boolean_
+  commentId: M:Eraware.Modules.MyModule.Services.ItemService.GetItemsPageAsync(System.String,System.Int32,System.Int32,System.Boolean)
+  fullName: Eraware.Modules.MyModule.Services.ItemService.GetItemsPageAsync(System.String, System.Int32, System.Int32, System.Boolean)
+  nameWithType: ItemService.GetItemsPageAsync(String, Int32, Int32, Boolean)
+- uid: Eraware.Modules.MyModule.Services.ItemService.GetItemsPageAsync*
+  name: GetItemsPageAsync
+  href: api/Eraware.Modules.MyModule.Services.ItemService.html#Eraware_Modules_MyModule_Services_ItemService_GetItemsPageAsync_
+  commentId: Overload:Eraware.Modules.MyModule.Services.ItemService.GetItemsPageAsync
   isSpec: "True"
-  fullName: Eraware.Modules.MyModule.Services.ItemService.GetItemsPage
-  nameWithType: ItemService.GetItemsPage
-- uid: Eraware.Modules.MyModule.Services.ItemService.UpdateItem(Eraware.Modules.MyModule.DTO.UpdateItemDTO,System.Int32)
-  name: UpdateItem(UpdateItemDTO, Int32)
-  href: api/Eraware.Modules.MyModule.Services.ItemService.html#Eraware_Modules_MyModule_Services_ItemService_UpdateItem_Eraware_Modules_MyModule_DTO_UpdateItemDTO_System_Int32_
-  commentId: M:Eraware.Modules.MyModule.Services.ItemService.UpdateItem(Eraware.Modules.MyModule.DTO.UpdateItemDTO,System.Int32)
-  fullName: Eraware.Modules.MyModule.Services.ItemService.UpdateItem(Eraware.Modules.MyModule.DTO.UpdateItemDTO, System.Int32)
-  nameWithType: ItemService.UpdateItem(UpdateItemDTO, Int32)
-- uid: Eraware.Modules.MyModule.Services.ItemService.UpdateItem*
-  name: UpdateItem
-  href: api/Eraware.Modules.MyModule.Services.ItemService.html#Eraware_Modules_MyModule_Services_ItemService_UpdateItem_
-  commentId: Overload:Eraware.Modules.MyModule.Services.ItemService.UpdateItem
+  fullName: Eraware.Modules.MyModule.Services.ItemService.GetItemsPageAsync
+  nameWithType: ItemService.GetItemsPageAsync
+- uid: Eraware.Modules.MyModule.Services.ItemService.UpdateItemAsync(Eraware.Modules.MyModule.DTO.UpdateItemDTO,System.Int32)
+  name: UpdateItemAsync(UpdateItemDTO, Int32)
+  href: api/Eraware.Modules.MyModule.Services.ItemService.html#Eraware_Modules_MyModule_Services_ItemService_UpdateItemAsync_Eraware_Modules_MyModule_DTO_UpdateItemDTO_System_Int32_
+  commentId: M:Eraware.Modules.MyModule.Services.ItemService.UpdateItemAsync(Eraware.Modules.MyModule.DTO.UpdateItemDTO,System.Int32)
+  fullName: Eraware.Modules.MyModule.Services.ItemService.UpdateItemAsync(Eraware.Modules.MyModule.DTO.UpdateItemDTO, System.Int32)
+  nameWithType: ItemService.UpdateItemAsync(UpdateItemDTO, Int32)
+- uid: Eraware.Modules.MyModule.Services.ItemService.UpdateItemAsync*
+  name: UpdateItemAsync
+  href: api/Eraware.Modules.MyModule.Services.ItemService.html#Eraware_Modules_MyModule_Services_ItemService_UpdateItemAsync_
+  commentId: Overload:Eraware.Modules.MyModule.Services.ItemService.UpdateItemAsync
   isSpec: "True"
-  fullName: Eraware.Modules.MyModule.Services.ItemService.UpdateItem
-  nameWithType: ItemService.UpdateItem
+  fullName: Eraware.Modules.MyModule.Services.ItemService.UpdateItemAsync
+  nameWithType: ItemService.UpdateItemAsync
 - uid: Eraware.Modules.MyModule.Services.LocalizationService
   name: LocalizationService
   href: api/Eraware.Modules.MyModule.Services.LocalizationService.html

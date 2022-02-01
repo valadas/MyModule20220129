@@ -113,19 +113,19 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/valadas/MyModule20220129/new/develop/apiSpec/new?filename=Eraware_Modules_MyModule_Data_Repositories_IRepository_1_Create__0_System_Int32_.md&amp;value=---%0Auid%3A%20Eraware.Modules.MyModule.Data.Repositories.IRepository%601.Create(%600%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/valadas/MyModule20220129/new/develop/apiSpec/new?filename=Eraware_Modules_MyModule_Data_Repositories_IRepository_1_CreateAsync__0_System_Int32_.md&amp;value=---%0Auid%3A%20Eraware.Modules.MyModule.Data.Repositories.IRepository%601.CreateAsync(%600%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/valadas/MyModule20220129/blob/develop/Data/Repositories/IRepository.cs/#L43">View Source</a>
+    <a href="https://github.com/valadas/MyModule20220129/blob/develop/Data/Repositories/IRepository.cs/#L59">View Source</a>
   </span>
-  <a id="Eraware_Modules_MyModule_Data_Repositories_IRepository_1_Create_" data-uid="Eraware.Modules.MyModule.Data.Repositories.IRepository`1.Create*"></a>
-  <h4 id="Eraware_Modules_MyModule_Data_Repositories_IRepository_1_Create__0_System_Int32_" data-uid="Eraware.Modules.MyModule.Data.Repositories.IRepository`1.Create(`0,System.Int32)">Create(T, Int32)</h4>
+  <a id="Eraware_Modules_MyModule_Data_Repositories_IRepository_1_CreateAsync_" data-uid="Eraware.Modules.MyModule.Data.Repositories.IRepository`1.CreateAsync*"></a>
+  <h4 id="Eraware_Modules_MyModule_Data_Repositories_IRepository_1_CreateAsync__0_System_Int32_" data-uid="Eraware.Modules.MyModule.Data.Repositories.IRepository`1.CreateAsync(`0,System.Int32)">CreateAsync(T, Int32)</h4>
   <div class="markdown level1 summary"><p>Creates an entity and saves it to the database.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Create(T entity, int userId = -1)</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;int&gt; CreateAsync(T entity, int userId = -1)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -151,21 +151,37 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>The id of the recently created item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/valadas/MyModule20220129/new/develop/apiSpec/new?filename=Eraware_Modules_MyModule_Data_Repositories_IRepository_1_Delete_System_Int32_.md&amp;value=---%0Auid%3A%20Eraware.Modules.MyModule.Data.Repositories.IRepository%601.Delete(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/valadas/MyModule20220129/new/develop/apiSpec/new?filename=Eraware_Modules_MyModule_Data_Repositories_IRepository_1_DeleteAsync_System_Int32_.md&amp;value=---%0Auid%3A%20Eraware.Modules.MyModule.Data.Repositories.IRepository%601.DeleteAsync(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/valadas/MyModule20220129/blob/develop/Data/Repositories/IRepository.cs/#L56">View Source</a>
+    <a href="https://github.com/valadas/MyModule20220129/blob/develop/Data/Repositories/IRepository.cs/#L74">View Source</a>
   </span>
-  <a id="Eraware_Modules_MyModule_Data_Repositories_IRepository_1_Delete_" data-uid="Eraware.Modules.MyModule.Data.Repositories.IRepository`1.Delete*"></a>
-  <h4 id="Eraware_Modules_MyModule_Data_Repositories_IRepository_1_Delete_System_Int32_" data-uid="Eraware.Modules.MyModule.Data.Repositories.IRepository`1.Delete(System.Int32)">Delete(Int32)</h4>
+  <a id="Eraware_Modules_MyModule_Data_Repositories_IRepository_1_DeleteAsync_" data-uid="Eraware.Modules.MyModule.Data.Repositories.IRepository`1.DeleteAsync*"></a>
+  <h4 id="Eraware_Modules_MyModule_Data_Repositories_IRepository_1_DeleteAsync_System_Int32_" data-uid="Eraware.Modules.MyModule.Data.Repositories.IRepository`1.DeleteAsync(System.Int32)">DeleteAsync(Int32)</h4>
   <div class="markdown level1 summary"><p>Deletes an entity in the database.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Delete(int id)</code></pre>
+    <pre><code class="lang-csharp hljs">Task DeleteAsync(int id)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -185,12 +201,28 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><p>An awaitable Task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/valadas/MyModule20220129/new/develop/apiSpec/new?filename=Eraware_Modules_MyModule_Data_Repositories_IRepository_1_Get.md&amp;value=---%0Auid%3A%20Eraware.Modules.MyModule.Data.Repositories.IRepository%601.Get%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/valadas/MyModule20220129/blob/develop/Data/Repositories/IRepository.cs/#L29">View Source</a>
+    <a href="https://github.com/valadas/MyModule20220129/blob/develop/Data/Repositories/IRepository.cs/#L30">View Source</a>
   </span>
   <a id="Eraware_Modules_MyModule_Data_Repositories_IRepository_1_Get_" data-uid="Eraware.Modules.MyModule.Data.Repositories.IRepository`1.Get*"></a>
   <h4 id="Eraware_Modules_MyModule_Data_Repositories_IRepository_1_Get" data-uid="Eraware.Modules.MyModule.Data.Repositories.IRepository`1.Get">Get()</h4>
@@ -219,19 +251,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/valadas/MyModule20220129/new/develop/apiSpec/new?filename=Eraware_Modules_MyModule_Data_Repositories_IRepository_1_GetAll.md&amp;value=---%0Auid%3A%20Eraware.Modules.MyModule.Data.Repositories.IRepository%601.GetAll%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/valadas/MyModule20220129/new/develop/apiSpec/new?filename=Eraware_Modules_MyModule_Data_Repositories_IRepository_1_GetAllAsync.md&amp;value=---%0Auid%3A%20Eraware.Modules.MyModule.Data.Repositories.IRepository%601.GetAllAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/valadas/MyModule20220129/blob/develop/Data/Repositories/IRepository.cs/#L23">View Source</a>
+    <a href="https://github.com/valadas/MyModule20220129/blob/develop/Data/Repositories/IRepository.cs/#L24">View Source</a>
   </span>
-  <a id="Eraware_Modules_MyModule_Data_Repositories_IRepository_1_GetAll_" data-uid="Eraware.Modules.MyModule.Data.Repositories.IRepository`1.GetAll*"></a>
-  <h4 id="Eraware_Modules_MyModule_Data_Repositories_IRepository_1_GetAll" data-uid="Eraware.Modules.MyModule.Data.Repositories.IRepository`1.GetAll">GetAll()</h4>
+  <a id="Eraware_Modules_MyModule_Data_Repositories_IRepository_1_GetAllAsync_" data-uid="Eraware.Modules.MyModule.Data.Repositories.IRepository`1.GetAllAsync*"></a>
+  <h4 id="Eraware_Modules_MyModule_Data_Repositories_IRepository_1_GetAllAsync" data-uid="Eraware.Modules.MyModule.Data.Repositories.IRepository`1.GetAllAsync">GetAllAsync()</h4>
   <div class="markdown level1 summary"><p>Gets all entities.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IEnumerable&lt;T&gt; GetAll()</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;T&gt;&gt; GetAllAsync()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -243,7 +275,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;&gt;</td>
         <td><p>All the entities.</p>
 </td>
       </tr>
@@ -251,19 +283,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/valadas/MyModule20220129/new/develop/apiSpec/new?filename=Eraware_Modules_MyModule_Data_Repositories_IRepository_1_GetById_System_Int32_.md&amp;value=---%0Auid%3A%20Eraware.Modules.MyModule.Data.Repositories.IRepository%601.GetById(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/valadas/MyModule20220129/new/develop/apiSpec/new?filename=Eraware_Modules_MyModule_Data_Repositories_IRepository_1_GetByIdAsync_System_Int32_.md&amp;value=---%0Auid%3A%20Eraware.Modules.MyModule.Data.Repositories.IRepository%601.GetByIdAsync(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/valadas/MyModule20220129/blob/develop/Data/Repositories/IRepository.cs/#L36">View Source</a>
+    <a href="https://github.com/valadas/MyModule20220129/blob/develop/Data/Repositories/IRepository.cs/#L37">View Source</a>
   </span>
-  <a id="Eraware_Modules_MyModule_Data_Repositories_IRepository_1_GetById_" data-uid="Eraware.Modules.MyModule.Data.Repositories.IRepository`1.GetById*"></a>
-  <h4 id="Eraware_Modules_MyModule_Data_Repositories_IRepository_1_GetById_System_Int32_" data-uid="Eraware.Modules.MyModule.Data.Repositories.IRepository`1.GetById(System.Int32)">GetById(Int32)</h4>
+  <a id="Eraware_Modules_MyModule_Data_Repositories_IRepository_1_GetByIdAsync_" data-uid="Eraware.Modules.MyModule.Data.Repositories.IRepository`1.GetByIdAsync*"></a>
+  <h4 id="Eraware_Modules_MyModule_Data_Repositories_IRepository_1_GetByIdAsync_System_Int32_" data-uid="Eraware.Modules.MyModule.Data.Repositories.IRepository`1.GetByIdAsync(System.Int32)">GetByIdAsync(Int32)</h4>
   <div class="markdown level1 summary"><p>Gets a single entity by id.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">T GetById(int id)</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;T&gt; GetByIdAsync(int id)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -293,7 +325,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">T</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;T&gt;</td>
         <td><p>A single entity.</p>
 </td>
       </tr>
@@ -301,19 +333,87 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/valadas/MyModule20220129/new/develop/apiSpec/new?filename=Eraware_Modules_MyModule_Data_Repositories_IRepository_1_Update__0_System_Int32_.md&amp;value=---%0Auid%3A%20Eraware.Modules.MyModule.Data.Repositories.IRepository%601.Update(%600%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/valadas/MyModule20220129/new/develop/apiSpec/new?filename=Eraware_Modules_MyModule_Data_Repositories_IRepository_1_GetPageAsync_System_Int32_System_Int32_System_Func_System_Linq_IQueryable__0__System_Linq_IOrderedQueryable__0___System_Linq_Expressions_Expression_System_Func__0_System_Object_____.md&amp;value=---%0Auid%3A%20Eraware.Modules.MyModule.Data.Repositories.IRepository%601.GetPageAsync(System.Int32%2CSystem.Int32%2CSystem.Func%7BSystem.Linq.IQueryable%7B%600%7D%2CSystem.Linq.IOrderedQueryable%7B%600%7D%7D%2CSystem.Linq.Expressions.Expression%7BSystem.Func%7B%600%2CSystem.Object%7D%7D%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/valadas/MyModule20220129/blob/develop/Data/Repositories/IRepository.cs/#L50">View Source</a>
+    <a href="https://github.com/valadas/MyModule20220129/blob/develop/Data/Repositories/IRepository.cs/#L47">View Source</a>
   </span>
-  <a id="Eraware_Modules_MyModule_Data_Repositories_IRepository_1_Update_" data-uid="Eraware.Modules.MyModule.Data.Repositories.IRepository`1.Update*"></a>
-  <h4 id="Eraware_Modules_MyModule_Data_Repositories_IRepository_1_Update__0_System_Int32_" data-uid="Eraware.Modules.MyModule.Data.Repositories.IRepository`1.Update(`0,System.Int32)">Update(T, Int32)</h4>
+  <a id="Eraware_Modules_MyModule_Data_Repositories_IRepository_1_GetPageAsync_" data-uid="Eraware.Modules.MyModule.Data.Repositories.IRepository`1.GetPageAsync*"></a>
+  <h4 id="Eraware_Modules_MyModule_Data_Repositories_IRepository_1_GetPageAsync_System_Int32_System_Int32_System_Func_System_Linq_IQueryable__0__System_Linq_IOrderedQueryable__0___System_Linq_Expressions_Expression_System_Func__0_System_Object_____" data-uid="Eraware.Modules.MyModule.Data.Repositories.IRepository`1.GetPageAsync(System.Int32,System.Int32,System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}},System.Linq.Expressions.Expression{System.Func{`0,System.Object}}[])">GetPageAsync(Int32, Int32, Func&lt;IQueryable&lt;T&gt;, IOrderedQueryable&lt;T&gt;&gt;, Expression&lt;Func&lt;T, Object&gt;&gt;[])</h4>
+  <div class="markdown level1 summary"><p>Gets a page of entities.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;PagedList&lt;T&gt;&gt; GetPageAsync(int page, int pageSize, Func&lt;IQueryable&lt;T&gt;, IOrderedQueryable&lt;T&gt;&gt; predicate, params Expression&lt;Func&lt;T, object&gt;&gt;[] include)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">page</span></td>
+        <td><p>The page number to get.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>The size of each page.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Linq.IQueryable</span>&lt;T&gt;, <span class="xref">System.Linq.IOrderedQueryable</span>&lt;T&gt;&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td><p>An optional predicate to filter and sort the superset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;T, <span class="xref">System.Object</span>&gt;&gt;[]</td>
+        <td><span class="parametername">include</span></td>
+        <td><p>If specified, will include the defined related entities.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Eraware.Modules.MyModule.Data.Repositories.PagedList-1.html">PagedList</a>&lt;T&gt;&gt;</td>
+        <td><p><a class="xref" href="Eraware.Modules.MyModule.Data.Repositories.PagedList-1.html">PagedList&lt;T&gt;</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/valadas/MyModule20220129/new/develop/apiSpec/new?filename=Eraware_Modules_MyModule_Data_Repositories_IRepository_1_UpdateAsync__0_System_Int32_.md&amp;value=---%0Auid%3A%20Eraware.Modules.MyModule.Data.Repositories.IRepository%601.UpdateAsync(%600%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/valadas/MyModule20220129/blob/develop/Data/Repositories/IRepository.cs/#L67">View Source</a>
+  </span>
+  <a id="Eraware_Modules_MyModule_Data_Repositories_IRepository_1_UpdateAsync_" data-uid="Eraware.Modules.MyModule.Data.Repositories.IRepository`1.UpdateAsync*"></a>
+  <h4 id="Eraware_Modules_MyModule_Data_Repositories_IRepository_1_UpdateAsync__0_System_Int32_" data-uid="Eraware.Modules.MyModule.Data.Repositories.IRepository`1.UpdateAsync(`0,System.Int32)">UpdateAsync(T, Int32)</h4>
   <div class="markdown level1 summary"><p>Updates an entity and saves the changes to the database.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Update(T entity, int userId = -1)</code></pre>
+    <pre><code class="lang-csharp hljs">Task UpdateAsync(T entity, int userId = -1)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -339,6 +439,22 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><p>An awaitable Task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           
@@ -350,7 +466,7 @@
                     <a href="https://github.com/valadas/MyModule20220129/new/develop/apiSpec/new?filename=Eraware_Modules_MyModule_Data_Repositories_IRepository_1.md&amp;value=---%0Auid%3A%20Eraware.Modules.MyModule.Data.Repositories.IRepository%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/valadas/MyModule20220129/blob/develop/Data/Repositories/IRepository.cs/#L16" class="contribution-link">View Source</a>
+                    <a href="https://github.com/valadas/MyModule20220129/blob/develop/Data/Repositories/IRepository.cs/#L17" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

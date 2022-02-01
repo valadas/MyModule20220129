@@ -274,7 +274,7 @@
     <a href="https://github.com/valadas/MyModule20220129/new/develop/apiSpec/new?filename=Eraware_Modules_MyModule_Controllers_ItemController__ctor_Eraware_Modules_MyModule_Services_IItemService_.md&amp;value=---%0Auid%3A%20Eraware.Modules.MyModule.Controllers.ItemController.%23ctor(Eraware.Modules.MyModule.Services.IItemService)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/valadas/MyModule20220129/blob/develop/Controllers/ItemController.cs/#L27">View Source</a>
+    <a href="https://github.com/valadas/MyModule20220129/blob/develop/Controllers/ItemController.cs/#L28">View Source</a>
   </span>
   <a id="Eraware_Modules_MyModule_Controllers_ItemController__ctor_" data-uid="Eraware.Modules.MyModule.Controllers.ItemController.#ctor*"></a>
   <h4 id="Eraware_Modules_MyModule_Controllers_ItemController__ctor_Eraware_Modules_MyModule_Services_IItemService_" data-uid="Eraware.Modules.MyModule.Controllers.ItemController.#ctor(Eraware.Modules.MyModule.Services.IItemService)">ItemController(IItemService)</h4>
@@ -310,7 +310,7 @@
     <a href="https://github.com/valadas/MyModule20220129/new/develop/apiSpec/new?filename=Eraware_Modules_MyModule_Controllers_ItemController_CreateItem_Eraware_Modules_MyModule_DTO_CreateItemDTO_.md&amp;value=---%0Auid%3A%20Eraware.Modules.MyModule.Controllers.ItemController.CreateItem(Eraware.Modules.MyModule.DTO.CreateItemDTO)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/valadas/MyModule20220129/blob/develop/Controllers/ItemController.cs/#L37">View Source</a>
+    <a href="https://github.com/valadas/MyModule20220129/blob/develop/Controllers/ItemController.cs/#L38">View Source</a>
   </span>
   <a id="Eraware_Modules_MyModule_Controllers_ItemController_CreateItem_" data-uid="Eraware.Modules.MyModule.Controllers.ItemController.CreateItem*"></a>
   <h4 id="Eraware_Modules_MyModule_Controllers_ItemController_CreateItem_Eraware_Modules_MyModule_DTO_CreateItemDTO_" data-uid="Eraware.Modules.MyModule.Controllers.ItemController.CreateItem(Eraware.Modules.MyModule.DTO.CreateItemDTO)">CreateItem(CreateItemDTO)</h4>
@@ -325,7 +325,7 @@
 [SwaggerResponse(HttpStatusCode.OK, typeof(ItemViewModel), Description = &quot;OK&quot;)]
 [SwaggerResponse(HttpStatusCode.BadRequest, typeof(string), Description = &quot;Bad Request&quot;)]
 [SwaggerResponse(HttpStatusCode.InternalServerError, typeof(Exception), Description = &quot;Error&quot;)]
-public IHttpActionResult CreateItem(CreateItemDTO item)</code></pre>
+public Task&lt;IHttpActionResult&gt; CreateItem(CreateItemDTO item)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -355,7 +355,7 @@ public IHttpActionResult CreateItem(CreateItemDTO item)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Web.Http.IHttpActionResult</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Web.Http.IHttpActionResult</span>&gt;</td>
         <td><p>Nothing.</p>
 </td>
       </tr>
@@ -366,7 +366,7 @@ public IHttpActionResult CreateItem(CreateItemDTO item)</code></pre>
     <a href="https://github.com/valadas/MyModule20220129/new/develop/apiSpec/new?filename=Eraware_Modules_MyModule_Controllers_ItemController_DeleteItem_System_Int32_.md&amp;value=---%0Auid%3A%20Eraware.Modules.MyModule.Controllers.ItemController.DeleteItem(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/valadas/MyModule20220129/blob/develop/Controllers/ItemController.cs/#L71">View Source</a>
+    <a href="https://github.com/valadas/MyModule20220129/blob/develop/Controllers/ItemController.cs/#L73">View Source</a>
   </span>
   <a id="Eraware_Modules_MyModule_Controllers_ItemController_DeleteItem_" data-uid="Eraware.Modules.MyModule.Controllers.ItemController.DeleteItem*"></a>
   <h4 id="Eraware_Modules_MyModule_Controllers_ItemController_DeleteItem_System_Int32_" data-uid="Eraware.Modules.MyModule.Controllers.ItemController.DeleteItem(System.Int32)">DeleteItem(Int32)</h4>
@@ -380,7 +380,7 @@ public IHttpActionResult CreateItem(CreateItemDTO item)</code></pre>
 [DnnModuleAuthorize(AccessLevel = SecurityAccessLevel.Edit)]
 [SwaggerResponse(HttpStatusCode.OK, typeof(void), Description = &quot;OK&quot;)]
 [SwaggerResponse(HttpStatusCode.InternalServerError, typeof(Exception), Description = &quot;Error&quot;)]
-public IHttpActionResult DeleteItem(int itemId)</code></pre>
+public Task&lt;IHttpActionResult&gt; DeleteItem(int itemId)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -410,7 +410,7 @@ public IHttpActionResult DeleteItem(int itemId)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Web.Http.IHttpActionResult</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Web.Http.IHttpActionResult</span>&gt;</td>
         <td><p>Nothing.</p>
 </td>
       </tr>
@@ -421,7 +421,7 @@ public IHttpActionResult DeleteItem(int itemId)</code></pre>
     <a href="https://github.com/valadas/MyModule20220129/new/develop/apiSpec/new?filename=Eraware_Modules_MyModule_Controllers_ItemController_GetItemsPage_Eraware_Modules_MyModule_DTO_GetItemsPageDTO_.md&amp;value=---%0Auid%3A%20Eraware.Modules.MyModule.Controllers.ItemController.GetItemsPage(Eraware.Modules.MyModule.DTO.GetItemsPageDTO)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/valadas/MyModule20220129/blob/develop/Controllers/ItemController.cs/#L54">View Source</a>
+    <a href="https://github.com/valadas/MyModule20220129/blob/develop/Controllers/ItemController.cs/#L55">View Source</a>
   </span>
   <a id="Eraware_Modules_MyModule_Controllers_ItemController_GetItemsPage_" data-uid="Eraware.Modules.MyModule.Controllers.ItemController.GetItemsPage*"></a>
   <h4 id="Eraware_Modules_MyModule_Controllers_ItemController_GetItemsPage_Eraware_Modules_MyModule_DTO_GetItemsPageDTO_" data-uid="Eraware.Modules.MyModule.Controllers.ItemController.GetItemsPage(Eraware.Modules.MyModule.DTO.GetItemsPageDTO)">GetItemsPage(GetItemsPageDTO)</h4>
@@ -434,7 +434,7 @@ public IHttpActionResult DeleteItem(int itemId)</code></pre>
 [AllowAnonymous]
 [SwaggerResponse(HttpStatusCode.OK, typeof(ItemsPageViewModel), Description = &quot;OK&quot;)]
 [SwaggerResponse(HttpStatusCode.InternalServerError, typeof(Exception), Description = &quot;Error&quot;)]
-public IHttpActionResult GetItemsPage([FromUri] GetItemsPageDTO dto)</code></pre>
+public Task&lt;IHttpActionResult&gt; GetItemsPage([FromUri] GetItemsPageDTO dto)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -464,7 +464,7 @@ public IHttpActionResult GetItemsPage([FromUri] GetItemsPageDTO dto)</code></pre
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Web.Http.IHttpActionResult</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Web.Http.IHttpActionResult</span>&gt;</td>
         <td><p>List of pages + paging information.</p>
 </td>
       </tr>
@@ -475,7 +475,7 @@ public IHttpActionResult GetItemsPage([FromUri] GetItemsPageDTO dto)</code></pre
     <a href="https://github.com/valadas/MyModule20220129/new/develop/apiSpec/new?filename=Eraware_Modules_MyModule_Controllers_ItemController_UpdateItem_Eraware_Modules_MyModule_DTO_UpdateItemDTO_.md&amp;value=---%0Auid%3A%20Eraware.Modules.MyModule.Controllers.ItemController.UpdateItem(Eraware.Modules.MyModule.DTO.UpdateItemDTO)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/valadas/MyModule20220129/blob/develop/Controllers/ItemController.cs/#L100">View Source</a>
+    <a href="https://github.com/valadas/MyModule20220129/blob/develop/Controllers/ItemController.cs/#L102">View Source</a>
   </span>
   <a id="Eraware_Modules_MyModule_Controllers_ItemController_UpdateItem_" data-uid="Eraware.Modules.MyModule.Controllers.ItemController.UpdateItem*"></a>
   <h4 id="Eraware_Modules_MyModule_Controllers_ItemController_UpdateItem_Eraware_Modules_MyModule_DTO_UpdateItemDTO_" data-uid="Eraware.Modules.MyModule.Controllers.ItemController.UpdateItem(Eraware.Modules.MyModule.DTO.UpdateItemDTO)">UpdateItem(UpdateItemDTO)</h4>
@@ -490,7 +490,7 @@ public IHttpActionResult GetItemsPage([FromUri] GetItemsPageDTO dto)</code></pre
 [SwaggerResponse(HttpStatusCode.OK, null, Description = &quot;OK&quot;)]
 [SwaggerResponse(HttpStatusCode.BadRequest, typeof(ArgumentException), Description = &quot;Malformed request&quot;)]
 [SwaggerResponse(HttpStatusCode.InternalServerError, typeof(Exception), Description = &quot;Error&quot;)]
-public IHttpActionResult UpdateItem(UpdateItemDTO item)</code></pre>
+public Task&lt;IHttpActionResult&gt; UpdateItem(UpdateItemDTO item)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -520,7 +520,7 @@ public IHttpActionResult UpdateItem(UpdateItemDTO item)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Web.Http.IHttpActionResult</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Web.Http.IHttpActionResult</span>&gt;</td>
         <td><p>Only a status code and no data.</p>
 </td>
       </tr>
@@ -531,7 +531,7 @@ public IHttpActionResult UpdateItem(UpdateItemDTO item)</code></pre>
     <a href="https://github.com/valadas/MyModule20220129/new/develop/apiSpec/new?filename=Eraware_Modules_MyModule_Controllers_ItemController_UserCanEdit.md&amp;value=---%0Auid%3A%20Eraware.Modules.MyModule.Controllers.ItemController.UserCanEdit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/valadas/MyModule20220129/blob/develop/Controllers/ItemController.cs/#L86">View Source</a>
+    <a href="https://github.com/valadas/MyModule20220129/blob/develop/Controllers/ItemController.cs/#L88">View Source</a>
   </span>
   <a id="Eraware_Modules_MyModule_Controllers_ItemController_UserCanEdit_" data-uid="Eraware.Modules.MyModule.Controllers.ItemController.UserCanEdit*"></a>
   <h4 id="Eraware_Modules_MyModule_Controllers_ItemController_UserCanEdit" data-uid="Eraware.Modules.MyModule.Controllers.ItemController.UserCanEdit">UserCanEdit()</h4>
@@ -580,7 +580,7 @@ public IHttpActionResult UserCanEdit()</code></pre>
                     <a href="https://github.com/valadas/MyModule20220129/new/develop/apiSpec/new?filename=Eraware_Modules_MyModule_Controllers_ItemController.md&amp;value=---%0Auid%3A%20Eraware.Modules.MyModule.Controllers.ItemController%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/valadas/MyModule20220129/blob/develop/Controllers/ItemController.cs/#L19" class="contribution-link">View Source</a>
+                    <a href="https://github.com/valadas/MyModule20220129/blob/develop/Controllers/ItemController.cs/#L20" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

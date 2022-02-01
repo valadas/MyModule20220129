@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Eraware.Modules.MyModule.Controllers.ItemController.html",
-          "hash": "KaXKiv5jQWzqoL/gHx47zw=="
+          "hash": "QE4ndOjLD2Bv/11MgRPM0w=="
         }
       },
       "is_incremental": false,
@@ -210,7 +210,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Eraware.Modules.MyModule.Data.Repositories.IRepository-1.html",
-          "hash": "+GlcIjVkkIhdsRkUVmkchA=="
+          "hash": "8iZlt1PuiAyPnU1B7np6MQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eraware.Modules.MyModule.Data.Repositories.PagedList-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eraware.Modules.MyModule.Data.Repositories.PagedList-1.html",
+          "hash": "u54WJTZuqqsIhKhbTJxNag=="
         }
       },
       "is_incremental": false,
@@ -222,7 +234,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Eraware.Modules.MyModule.Data.Repositories.Repository-1.html",
-          "hash": "h/rYDU8pJVMUGwW4E4JR7A=="
+          "hash": "G/ikWHCVU9VSpERifEHygQ=="
         }
       },
       "is_incremental": false,
@@ -234,7 +246,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Eraware.Modules.MyModule.Data.Repositories.html",
-          "hash": "fIezOkZogmkn2LdOvZFtaw=="
+          "hash": "nHpt39IpwR7hLlt50KFIeg=="
         }
       },
       "is_incremental": false,
@@ -258,7 +270,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Eraware.Modules.MyModule.Services.IItemService.html",
-          "hash": "Ux5RBQIkJA54i6vr+GruQw=="
+          "hash": "cWvas49d0zK0J6T+Sp3yWg=="
         }
       },
       "is_incremental": false,
@@ -282,7 +294,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Eraware.Modules.MyModule.Services.ItemService.html",
-          "hash": "lXBoM9NpAd8XhtQZt3gROA=="
+          "hash": "8stXjfNBc2cKb4Zj9Wo2Dw=="
         }
       },
       "is_incremental": false,
@@ -429,7 +441,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "Oarg6Rm27NcRQ3CheeiOAg=="
+          "hash": "SONn04tM3Mfn2J+6CcQ95Q=="
         }
       },
       "is_incremental": false,
@@ -2690,7 +2702,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 33,
+          "total_file_count": 34,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
