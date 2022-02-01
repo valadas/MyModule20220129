@@ -40,7 +40,7 @@ using static Nuke.Common.Tools.Npm.NpmTasks;
 using static Nuke.Common.Tools.ReportGenerator.ReportGeneratorTasks;
 
 // Not using AutoGenerate here because of https://github.com/nuke-build/nuke/issues/857
-// Not using ImportGitHubToken here because of https://github.com/nuke-build/nuke/issues/858 and/or https://github.com/actions/runner/issues/1647
+// Not using EnableGitHubContext here because of https://github.com/nuke-build/nuke/issues/858 and/or https://github.com/actions/runner/issues/1647
 [GitHubActions(
     "Release",
     GitHubActionsImage.WindowsLatest,
