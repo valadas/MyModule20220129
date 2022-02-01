@@ -41,15 +41,13 @@ namespace Eraware.Modules.MyModule.Data.Repositories
         /// </summary>
         /// <param name="page">The page number to get.</param>
         /// <param name="pageSize">The size of each page.</param>
-        /// <param name="sortPredicate">An optional predicate to sort the superset.</param>
-        /// <param name="filterPredicate">An optional predicate to filter the superset.</param>
+        /// <param name="predicate">An optional predicate to filter and sort the superset.</param>
         /// <param name="include">If specified, will include the defined related entities.</param>
         /// <returns><see cref="PagedList{T}"/>.</returns>
         Task<PagedList<T>> GetPageAsync(
             int page,
             int pageSize,
-            Func<IQueryable<T>, IOrderedQueryable<T>> sortPredicate,
-            Expression<Func<T, bool>> filterPredicate = null,
+            Func<IQueryable<T>, IOrderedQueryable<T>> predicate,
             params Expression<Func<T, object>>[] include);
 
         /// <summary>

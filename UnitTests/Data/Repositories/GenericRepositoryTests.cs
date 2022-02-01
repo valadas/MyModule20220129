@@ -201,8 +201,9 @@ namespace UnitTests.Data.Repositories
             var result = await repository.GetPageAsync(
                 page,
                 pageSize,
-                items => items.OrderBy(i => i.Name),
-                i => i.Name.ToUpper().Contains("test".ToUpper()));
+                items => items
+                .Where(item =>item.Name.ToUpper().Contains("test".ToUpper()))
+                .OrderBy(i => i.Name));
 
             Assert.Equal(expectedItems, result.Items.Count());
             Assert.Equal(page == 0 ? 1 : page, result.Page);
@@ -238,7 +239,6 @@ namespace UnitTests.Data.Repositories
                     1,
                     10,
                     products => products.OrderBy(product => product.Name),
-                    null,
                     product => product.Category);
             }
         }

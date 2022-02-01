@@ -18,14 +18,14 @@ namespace Eraware.Modules.MyModule.Data.Repositories
     public class Repository<T> : IRepository<T>
         where T : BaseEntity
     {
-        private readonly DbContext context;
+        private readonly ModuleDbContext context;
         private DbSet<T> entities;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Repository{TEntity}"/> class.
         /// </summary>
         /// <param name="context">The module database context.</param>
-        public Repository(DbContext context)
+        public Repository(ModuleDbContext context)
         {
             this.context = context;
             this.entities = context.Set<T>();
@@ -53,8 +53,7 @@ namespace Eraware.Modules.MyModule.Data.Repositories
         public async Task<PagedList<T>> GetPageAsync(
             int page,
             int pageSize,
-            Func<IQueryable<T>, IOrderedQueryable<T>> sortPredicate,
-            Expression<Func<T, bool>> filterPredicate = null,
+            Func<IQueryable<T>, IOrderedQueryable<T>> predicate,
             params Expression<Func<T, object>>[] include)
         {
             if (page < 1)
@@ -74,15 +73,8 @@ namespace Eraware.Modules.MyModule.Data.Repositories
                 items = include.Aggregate(items, (current, inc) => current.Include(inc));
             }
 
-            // Filter before sorting.
-            if (filterPredicate != null)
-            {
-                items = items.Where(filterPredicate);
-            }
-
-            // Sort before paging.
             items = items.OrderBy(i => i.Id);
-            items = sortPredicate(items);
+            items = predicate(items);
 
             var resultCount = await items.CountAsync();
             var pageCount = (resultCount + pageSize - 1) / pageSize;

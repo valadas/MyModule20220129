@@ -83,8 +83,7 @@ namespace UnitTests.Services
             this.itemRepository.Setup(i => i.GetPageAsync(
                 It.IsAny<int>(),
                 It.IsAny<int>(),
-                It.IsAny<Func<IQueryable<Item>, IOrderedQueryable<Item>>>(),
-                It.IsAny<Expression<Func<Item, bool>>>()))
+                It.IsAny<Func<IQueryable<Item>, IOrderedQueryable<Item>>>()))
                 .Returns(Task.FromResult(returnedPage));
 
             var finalReturn = await this.itemService.GetItemsPageAsync("test", 1, 10, descending);

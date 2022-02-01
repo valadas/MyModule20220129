@@ -1,6 +1,7 @@
 ﻿// MIT License
 // Copyright Eraware
 
+using Eraware.Modules.MyModule.Common.Extensions;
 using Eraware.Modules.MyModule.Data.Entities;
 using Eraware.Modules.MyModule.Data.Repositories;
 using Eraware.Modules.MyModule.DTO;
@@ -55,8 +56,9 @@ namespace Eraware.Modules.MyModule.Services
             var items = await this.itemRepository.GetPageAsync(
                 page,
                 pageSize,
-                sortPredicate,
-                i => i.Name.ToUpper().Contains(query.ToUpper()));
+                entities => entities
+                    .Where(item => string.IsNullOrEmpty(query) || item.Name.ToUpper().Contains(query.ToUpper()))
+                    .Order(item => item.Name, descending));
 
             var itemsPageViewModel = new ItemsPageViewModel()
             {

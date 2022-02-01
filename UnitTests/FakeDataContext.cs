@@ -51,10 +51,10 @@ namespace UnitTests
         }
     }
 
-    public class TestDataContext : DbContext
+    public class TestDataContext : ModuleDbContext
     {
         public TestDataContext(DbConnection connection)
-            :base(connection, true)
+            :base(connection)
         {
         }
 
