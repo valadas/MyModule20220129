@@ -39,4 +39,4 @@ jobs:
       - name: Run './build.cmd Release'
         run: ./build.cmd Release
         env:
-          GITHUB_CONTEXT: ${{ toJSON(github) }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
