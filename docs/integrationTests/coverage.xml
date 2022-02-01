@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<coverage line-rate="0.5805" branch-rate="0.35409999999999997" version="1.9" timestamp="1643689559" lines-covered="191" lines-valid="329" branches-covered="17" branches-valid="48">
+<coverage line-rate="0.5805" branch-rate="0.35409999999999997" version="1.9" timestamp="1643695240" lines-covered="191" lines-valid="329" branches-covered="17" branches-valid="48">
   <sources>
     <source>D:\a\MyModule20220129\MyModule20220129\</source>
   </sources>
