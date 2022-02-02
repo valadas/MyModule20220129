@@ -40,12 +40,12 @@ using static Nuke.Common.Tools.Npm.NpmTasks;
 using static Nuke.Common.Tools.ReportGenerator.ReportGeneratorTasks;
 
 // Not using AutoGenerate here because of https://github.com/nuke-build/nuke/issues/857
-// Not using ImportGitHubToken here because of https://github.com/nuke-build/nuke/issues/858 and/or https://github.com/actions/runner/issues/1647
+// Not using EnableGitHubContext here because of https://github.com/nuke-build/nuke/issues/858 and/or https://github.com/actions/runner/issues/1647
 [GitHubActions(
     "Release",
     GitHubActionsImage.WindowsLatest,
     AutoGenerate = false,
-    ImportSecrets =new[] { "GITHUB_TOKEN" },
+    ImportSecrets = new[] { nameof(GitHubToken) },
     OnPushBranches = new[] { "master", "main", "release/*" },
     InvokedTargets = new[] { nameof(Release) }
 )]
@@ -53,7 +53,7 @@ using static Nuke.Common.Tools.ReportGenerator.ReportGeneratorTasks;
     "PR_Validation",
     GitHubActionsImage.WindowsLatest,
     AutoGenerate = false,
-    ImportSecrets = new[] { "GITHUB_TOKEN" },
+    ImportSecrets = new[] { nameof(GitHubToken) },
     OnPullRequestBranches = new[] { "master", "main", "develop", "development", "release/*" },
     InvokedTargets = new[] { nameof(Package) }
 )]
@@ -61,7 +61,7 @@ using static Nuke.Common.Tools.ReportGenerator.ReportGeneratorTasks;
     "Build",
     GitHubActionsImage.WindowsLatest,
     AutoGenerate = false,
-    ImportSecrets = new[] { "GITHUB_TOKEN" },
+    ImportSecrets = new[] { nameof(GitHubToken) },
     OnPushBranches = new[] { "master", "develop", "release/*" },
     InvokedTargets = new[] { nameof(DeployGeneratedFiles) }
     )]
@@ -80,7 +80,7 @@ internal class Build : NukeBuild
     readonly Configuration Configuration = IsLocalBuild ? Configuration.Debug : Configuration.Release;
 
     [Parameter("Github token to authenticate in CI")]
-    readonly string GitHubToken = Environment.GetEnvironmentVariable("GITHUB_TOKEN");
+    readonly string GitHubToken;
 
     [Solution] readonly Solution Solution;
     [GitRepository] readonly GitRepository GitRepository;
